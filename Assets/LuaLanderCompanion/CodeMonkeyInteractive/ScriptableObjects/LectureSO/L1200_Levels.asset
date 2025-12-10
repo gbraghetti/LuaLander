@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f6a93b863ca8314695b382c0c8c2b3d, type: 3}
+  m_Name: L1200_Levels
+  m_EditorClassIdentifier: 
+  lectureCode: 1200
+  lectureSectionNumber: 20
+  lectureName: Levels
+  lectureTitle: Levels
+  frequentlyAskedQuestionListSO: {fileID: 11400000, guid: 5faaee4ebd93e6940ae3c874e79fd8e1,
+    type: 2}
+  quizListSO: {fileID: 11400000, guid: 039e419b92fbce84788558b2f462e91c, type: 2}
+  exerciseListSO: {fileID: 0}
+  lectureDescription: "<h1>Lecture Summary: Levels</h1>\r\n\r\nIn this lecture, we
+    implemented support for multiple levels in our Lunar Lander game. Instead of
+    creating separate scenes for each level, we took the cleaner and more modular
+    approach of using prefabs. Each level is now a prefab containing the terrain,
+    landing pads, and a special `LanderStartPosition` transform to define the player's
+    starting point.\r\n\r\nWe created a `GameLevel` script to store level-specific
+    data like the level number and the start position. Then, on the `GameManager`,
+    we loaded the correct level by looping through a list of all level prefabs and
+    instantiating the one matching the current level number. The lander was then
+    positioned at that level\u2019s designated start point.\r\n\r\nTo move between
+    levels, we hooked up the continue button in the `LandedUI` to either retry the
+    current level or load the next one. To make that work, we made the `levelNumber`
+    field static, allowing it to persist between scene reloads. Same with `score`,
+    also made static so your progress carries across levels.\r\n\r\nNow we can easily
+    create new levels by duplicating a prefab and customizing its layout. Everything
+    is dynamic and clean. In the next lecture, we\u2019ll add a nice camera zoom-out
+    so the player can preview the full level before playing.\r\n"

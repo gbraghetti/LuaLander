@@ -1,0 +1,67 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <ui:Template name="LectureSingle" src="project://database/Assets/LuaLanderCompanion/CodeMonkeyInteractive/Editor/MainWindow/LectureSingle.uxml?fileID=9197481963319205126&amp;guid=8d486bc4ef317a742a3906da7e131230&amp;type=3#LectureSingle" />
+    <Style src="project://database/Assets/LuaLanderCompanion/CodeMonkeyInteractive/Editor/MainWindow/MainWindow.uss?fileID=7433441132597879392&amp;guid=2d0b743f74108c240b22fda9921bd1e0&amp;type=3#MainWindow" />
+    <ui:VisualElement name="main" style="flex-grow: 1;">
+        <ui:VisualElement name="logo" style="flex-grow: 0; -unity-background-scale-mode: scale-to-fit; flex-shrink: 0; height: 90px; background-image: url(&quot;project://database/Assets/LuaLanderCompanion/Textures/CodeMonkeyLogoSmallHeight.png?fileID=2800000&amp;guid=56b32760adb6dda49904af41a2a13155&amp;type=3#CodeMonkeyLogoSmallHeight&quot;);" />
+        <ui:VisualElement name="mainMenu" style="flex-grow: 1;">
+            <ui:ScrollView scroll-deceleration-rate="0,135" elasticity="0,1">
+                <ui:VisualElement name="checkingForUpdates" style="flex-grow: 1;">
+                    <ui:Label tabindex="-1" text="Checking for Updates..." parse-escape-sequences="true" display-tooltip-when-elided="true" name="textLabel" class="cursor-link" style="background-color: rgb(243, 158, 0); color: rgb(255, 255, 255); -unity-text-align: upper-center; -unity-font-style: bold; font-size: 12px; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; margin-top: 5px; margin-right: 5px; margin-bottom: 5px; margin-left: 5px;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="totals" style="flex-grow: 1; padding-top: 4px; padding-right: 4px; padding-bottom: 4px; padding-left: 4px; margin-top: 5px; margin-bottom: 5px;">
+                    <ui:Label tabindex="-1" text="TOTALS" parse-escape-sequences="true" display-tooltip-when-elided="true" style="position: absolute; -unity-font-style: bold; font-size: 16px;" />
+                    <ui:Label tabindex="-1" text="FAQ: 12/325\nQuiz: 35/320\nExercises: 12/55" parse-escape-sequences="true" display-tooltip-when-elided="true" name="totalsLabel" style="width: auto; flex-direction: column; position: relative; -unity-text-align: upper-right; font-size: 12px;" />
+                </ui:VisualElement>
+                <ui:Button text="Lecture List" parse-escape-sequences="true" display-tooltip-when-elided="true" name="lectureListButton" style="-unity-font-style: bold; height: 40px;" />
+                <ui:VisualElement name="message" style="flex-grow: 1; padding-top: 4px; padding-right: 4px; padding-bottom: 4px; padding-left: 4px; margin-top: 5px; margin-bottom: 5px;">
+                    <ui:Label tabindex="-1" text="Hi there!\nThanks for picking up the course, I hope it helps you a ton in your learning journey!\nI&apos;m always available in the course comments if you need help with anything.\n- Code Monkey" parse-escape-sequences="true" display-tooltip-when-elided="true" name="messageLabel" style="white-space: normal; font-size: 11px;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="qotd" style="flex-grow: 1; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; margin-top: 5px; margin-bottom: 5px;">
+                    <ui:Label tabindex="-1" text="QUESTION OF THE DAY" parse-escape-sequences="true" display-tooltip-when-elided="true" name="qotdTitle" style="white-space: normal; font-size: 14px; -unity-font-style: bold; -unity-text-align: upper-center; color: rgb(255, 255, 255); -unity-text-outline-color: rgb(0, 0, 0); -unity-text-outline-width: 0; letter-spacing: 10px;" />
+                    <ui:Label tabindex="-1" text="How much time per frame do you have in order to hit 60FPS?" parse-escape-sequences="true" display-tooltip-when-elided="true" name="questionLabel" style="white-space: normal; font-size: 12px; -unity-font-style: normal; -unity-text-align: upper-center;" />
+                    <ui:Button text="Answer" parse-escape-sequences="true" display-tooltip-when-elided="true" name="answerAButton" class="qotdAnswerButton" style="font-size: 9px; -unity-text-align: middle-left; padding-top: 2px; padding-right: 2px; padding-bottom: 2px; padding-left: 8px; margin-top: 2px; margin-right: 2px; margin-bottom: 2px; margin-left: 2px;" />
+                    <ui:Button text="Answer" parse-escape-sequences="true" display-tooltip-when-elided="true" name="answerBButton" class="qotdAnswerButton" style="font-size: 9px; -unity-text-align: middle-left; padding-top: 2px; padding-right: 2px; padding-bottom: 2px; padding-left: 8px; margin-top: 2px; margin-right: 2px; margin-bottom: 2px; margin-left: 2px;" />
+                    <ui:Button text="Answer" parse-escape-sequences="true" display-tooltip-when-elided="true" name="answerCButton" class="qotdAnswerButton" style="font-size: 9px; -unity-text-align: middle-left; padding-top: 2px; padding-right: 2px; padding-bottom: 2px; padding-left: 8px; margin-top: 2px; margin-right: 2px; margin-bottom: 2px; margin-left: 2px;" />
+                    <ui:Button text="Answer" parse-escape-sequences="true" display-tooltip-when-elided="true" name="answerDButton" class="qotdAnswerButton" style="font-size: 9px; -unity-text-align: middle-left; padding-top: 2px; padding-right: 2px; padding-bottom: 2px; padding-left: 8px; margin-top: 2px; margin-right: 2px; margin-bottom: 2px; margin-left: 2px;" />
+                    <ui:Button text="Answer" parse-escape-sequences="true" display-tooltip-when-elided="true" name="answerEButton" class="qotdAnswerButton" style="font-size: 9px; -unity-text-align: middle-left; padding-top: 2px; padding-right: 2px; padding-bottom: 2px; padding-left: 8px; margin-top: 2px; margin-right: 2px; margin-bottom: 2px; margin-left: 2px;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="dynamicMessage" class="cursor-link" style="flex-grow: 1; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; margin-bottom: 5px; margin-top: 5px; display: none;">
+                    <ui:Label tabindex="-1" text="&lt;u&gt;Get awesome assets 90% OFF!&lt;/u&gt;" parse-escape-sequences="true" display-tooltip-when-elided="true" name="messageLabel" class="cursor-link" style="white-space: normal; font-size: 12px; -unity-font-style: bold; -unity-text-align: upper-center;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="latestVideos" style="flex-grow: 1; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px;">
+                    <ui:Label tabindex="-1" text="Latest Videos" parse-escape-sequences="true" display-tooltip-when-elided="true" style="-unity-text-align: upper-center; -unity-font-style: bold;" />
+                    <ui:VisualElement name="latestVideos1Container" class="cursor-link" style="flex-grow: 1; flex-direction: row;">
+                        <ui:VisualElement name="_1Container" style="flex-grow: 1; background-color: rgba(255, 255, 255, 0); width: 50%;" />
+                        <ui:VisualElement name="_2Container" style="flex-grow: 1; background-color: rgba(255, 255, 255, 0); width: 50%;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="latestVideos2Container" class="cursor-link" style="flex-grow: 1; flex-direction: row;">
+                        <ui:VisualElement name="_3Container" style="flex-grow: 1; background-color: rgba(255, 255, 255, 0); width: 50%;" />
+                        <ui:VisualElement name="_4Container" style="flex-grow: 1; background-color: rgba(255, 255, 255, 0); width: 50%;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="myGames" style="flex-grow: 1;">
+                    <ui:Label tabindex="-1" text="&lt;a href=&quot;https://cmonkey.co/dinkyguardians&quot;&gt;&lt;u&gt;Play Dinky Guardians!&lt;/u&gt;&lt;/a&gt;" parse-escape-sequences="true" display-tooltip-when-elided="true" style="-unity-text-align: upper-center; -unity-font-style: bold;" />
+                </ui:VisualElement>
+            </ui:ScrollView>
+        </ui:VisualElement>
+        <ui:VisualElement name="lectureList" style="flex-grow: 1;">
+            <ui:Button text="Back to Main Menu" parse-escape-sequences="true" display-tooltip-when-elided="true" name="backToMainMenuButton" style="-unity-font-style: bold; height: 40px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); background-color: rgb(197, 197, 197); color: rgb(46, 46, 46);" />
+            <ui:ScrollView scroll-deceleration-rate="0,135" elasticity="0,1" name="lectureListScrollView" style="flex-grow: 1;">
+                <ui:Instance template="LectureSingle" name="LectureSingle" />
+            </ui:ScrollView>
+        </ui:VisualElement>
+        <ui:VisualElement name="selectedLectureContainer" style="flex-grow: 1; display: flex;">
+            <uie:ObjectField name="scriptableObjectField" type="CodeMonkey.CSharpCourse.Interactive.LectureSO, CodeMonkeyInteractive" style="margin-top: 5px; margin-right: 5px; margin-bottom: 5px; margin-left: 5px; flex-grow: 0;" />
+            <ui:VisualElement name="buttonContainer" style="flex-grow: 1; flex-shrink: 0; height: 95px; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); max-height: 90px;">
+                <ui:Button text="FAQ (2/10)" parse-escape-sequences="true" display-tooltip-when-elided="true" name="frequentlyAskedQuestionButton" class="lectureButton" />
+                <ui:Button text="Quiz (0/15)" parse-escape-sequences="true" display-tooltip-when-elided="true" name="quizButton" class="lectureButton" />
+                <ui:Button text="Exercises (0/12)" parse-escape-sequences="true" display-tooltip-when-elided="true" name="exercisesButton" enabled="false" class="lectureButton" />
+            </ui:VisualElement>
+            <ui:ScrollView name="ScrollView" style="height: auto; align-items: stretch; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); flex-grow: 1;">
+                <ui:VisualElement name="textContainerVisualElement" style="flex-grow: 1; height: 100%; padding-top: 10px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px;" />
+            </ui:ScrollView>
+            <ui:Button text="Back to Lecture List" parse-escape-sequences="true" display-tooltip-when-elided="true" name="backButton" style="-unity-font-style: bold; height: 40px;" />
+        </ui:VisualElement>
+        <ui:Label tabindex="-1" text="0.01" parse-escape-sequences="true" display-tooltip-when-elided="true" name="versionLabel" style="position: absolute; -unity-font-style: bold; font-size: 8px; flex-direction: column; width: 100%; -unity-text-align: upper-right; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0;" />
+    </ui:VisualElement>
+</ui:UXML>

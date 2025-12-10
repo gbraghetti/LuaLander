@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cf51161046453c40b9eaf63bfb19050, type: 3}
+  m_Name: Quiz_L1270_01
+  m_EditorClassIdentifier: 
+  question: What is the main purpose of using ScriptableObjects in this lecture?
+  optionList:
+  - To store runtime data for cargo pickups
+  - To define and manage multiple cargo types as reusable data assets
+  - To replace MonoBehaviours for all game logic
+  - To load scenes dynamically
+  correctOptionIndex: 1
+  answer: ScriptableObjects are used to define cargo types (e.g., crate, red key,
+    blue key) as project assets. This allows the developer to reuse, reference, and
+    manage cargo types easily without hardcoding or duplicating data.

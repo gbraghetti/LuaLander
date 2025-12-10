@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b77bfb2ebc4ee664ab63408f6b18e046, type: 3}
+  m_Name: FAQ_L1050_01
+  m_EditorClassIdentifier: 
+  title: "Why can\u2019t I just drag the lander sprite and add physics directly to
+    it?"
+  text: "Technically you can, but it\u2019s not best practice. By separating logic
+    (parent GameObject) from visuals (child with sprite), you gain flexibility. You
+    can swap visuals, change scale, or add effects without breaking gameplay logic."

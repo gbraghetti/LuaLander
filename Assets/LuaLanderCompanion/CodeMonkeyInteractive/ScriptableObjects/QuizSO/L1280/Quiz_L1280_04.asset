@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cf51161046453c40b9eaf63bfb19050, type: 3}
+  m_Name: Quiz_L1280_04
+  m_EditorClassIdentifier: 
+  question: What would be the visual result of a wind force of (0, -800)?
+  optionList:
+  - Arrows pointing to the right
+  - Arrows pointing straight down
+  - Arrows pointing straight up
+  - No visual change
+  correctOptionIndex: 1
+  answer: A force of (0, -800) is a strong downward wind. The arrows, set via `arrowTransform.right
+    = windForce`, would rotate to point in that downward direction.

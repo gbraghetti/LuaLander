@@ -1,0 +1,11 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/LuaLanderCompanion/CodeMonkeyInteractive/Editor/FrequentlyAskedQuestions/FrequentlyAskedQuestionSingle.uss?fileID=7433441132597879392&amp;guid=d133c85ed09bad6409de0f1d25b2c4fa&amp;type=3#FrequentlyAskedQuestionSingle" />
+    <ui:VisualElement name="questionSingle" style="flex-grow: 1; height: 65px; margin-top: 5px; margin-bottom: 5px; align-items: center;">
+        <ui:Button text="Why do this? Or this? Why do this? Or this? Why do this? Or this? Why do this? Or this?" parse-escape-sequences="true" display-tooltip-when-elided="true" name="button" class="questionButton">
+            <ui:VisualElement style="flex-grow: 1; flex-direction: row-reverse;">
+                <ui:VisualElement name="done" style="flex-grow: 0; flex-shrink: 0; flex-direction: row-reverse; width: 20px; height: 20px; background-image: url(&apos;project://database/Assets/LuaLanderCompanion/Textures/Tick_Border.png?fileID=2800000&amp;guid=5f2eee5db51119b48848960807db24ba&amp;type=3#Tick_Border&apos;); -unity-background-image-tint-color: rgb(68, 255, 0);" />
+            </ui:VisualElement>
+        </ui:Button>
+    </ui:VisualElement>
+    <ui:Button text="DONE" parse-escape-sequences="true" display-tooltip-when-elided="true" name="debugDoneButton" style="margin-top: 5px; margin-right: 5px; margin-bottom: 5px; margin-left: 5px; height: 100%; border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); border-top-width: 3px; border-right-width: 3px; border-bottom-width: 3px; border-left-width: 3px; white-space: normal; text-overflow: clip; -unity-text-align: middle-center; -unity-background-image-tint-color: rgb(255, 255, 255); background-color: rgb(0, 148, 255); color: rgb(255, 255, 255); -unity-font-style: bold; position: absolute; width: 50px; font-size: 8px;" />
+</ui:UXML>

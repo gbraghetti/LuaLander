@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f6a93b863ca8314695b382c0c8c2b3d, type: 3}
+  m_Name: L1250_SoundsMusic
+  m_EditorClassIdentifier: 
+  lectureCode: 1250
+  lectureSectionNumber: 25
+  lectureName: SoundsMusic
+  lectureTitle: Sounds and Music
+  frequentlyAskedQuestionListSO: {fileID: 11400000, guid: 924679b7bd5407245b0ec97b5b248a61,
+    type: 2}
+  quizListSO: {fileID: 11400000, guid: b7c564a78a024f241944230bf71daa8c, type: 2}
+  exerciseListSO: {fileID: 0}
+  lectureDescription: "<h1>Lecture Summary: Sounds and Music</h1>\r\n\r\nIn this
+    lecture, we brought our game to life by adding sound effects and background music!
+    We started by creating a `SoundManager` to keep all audio logic clean and decoupled.
+    We used Unity events to trigger sounds from different gameplay actions, like
+    picking up coins and fuel, crashing, or landing. For each event, we just played
+    the correct sound using `AudioSource.PlayClipAtPoint`.\r\n\r\nThen we added looping
+    thruster audio using a dedicated `LanderAudio` script that plays or stops the
+    sound based on player input. For the background music, we set up a `MusicManager`
+    with a looping track, and we made sure it keeps playing across scenes by saving
+    the playback time between level loads.\r\n\r\nFinally, we added volume controls
+    to the pause menu for both sound effects and music. Players can adjust volume
+    levels with simple buttons, and the changes reflect instantly, even on the thruster
+    sound using an event system.\r\n\r\nNow the game not only plays great, it sounds
+    great too! Just a bit of polish left before it\u2019s fully done. Let\u2019s
+    do that next!\r\n"

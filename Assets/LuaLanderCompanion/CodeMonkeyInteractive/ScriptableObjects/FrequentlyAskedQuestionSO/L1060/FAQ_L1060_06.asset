@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b77bfb2ebc4ee664ab63408f6b18e046, type: 3}
+  m_Name: FAQ_L1060_06
+  m_EditorClassIdentifier: 
+  title: "What\u2019s the difference between `Keyboard.current.upArrowKey.isPressed`
+    and `Input.GetKey(KeyCode.UpArrow)`?"
+  text: They do the same thing, check if the key is being held down, but they belong
+    to different systems. The first is from the new Input System, the second is from
+    the old legacy Input Manager.

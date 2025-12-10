@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cf51161046453c40b9eaf63bfb19050, type: 3}
+  m_Name: Quiz_L1140_05
+  m_EditorClassIdentifier: 
+  question: What does the question mark (`?.`) in `OnUpForce?.Invoke(...)` mean?
+  optionList:
+  - It's a typo
+  - It's the null coalescing operator
+  - It's a comment
+  - It's the null conditional operator
+  correctOptionIndex: 3
+  answer: The `?.` checks if the event has any listeners (is not null) before trying
+    to invoke it, which prevents errors from trying to call a null event with no
+    listeners.

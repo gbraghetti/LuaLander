@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f6a93b863ca8314695b382c0c8c2b3d, type: 3}
+  m_Name: L1090_Cinemachine
+  m_EditorClassIdentifier: 
+  lectureCode: 1090
+  lectureSectionNumber: 9
+  lectureName: Cinemachine
+  lectureTitle: Cinemachine
+  frequentlyAskedQuestionListSO: {fileID: 11400000, guid: 7e72790598e21164da71df6e0c731bbe,
+    type: 2}
+  quizListSO: {fileID: 11400000, guid: 4cad3d43870ca9749b2e2b79d4581720, type: 2}
+  exerciseListSO: {fileID: 0}
+  lectureDescription: "<h1>Lecture Summary: Cinemachine</h1>\r\n\r\nIn this lecture,
+    we learned how to use Unity\u2019s awesome Cinemachine tool to make the camera
+    follow our lander around the level. First, we installed Cinemachine via the Package
+    Manager. Once installed, we created a new Cinemachine Virtual Camera, which automatically
+    linked itself to the main camera through a special component called the Cinemachine
+    Brain.\r\n\r\nTo make the camera follow the player, we simply added a **Position
+    Composer** component to the virtual camera and set the **Follow** target to our
+    lander. Just like that, the camera smoothly followed the player, super simple
+    and super powerful.\r\n\r\nWe also tweaked a few settings to improve the feel.
+    Specifically, we added a **Dead Zone** so the camera doesn\u2019t constantly
+    move when the lander is near the center of the screen. This made the gameplay
+    feel a lot smoother, especially during landings.\r\n\r\nSo now our camera follows
+    the player automatically, and we\u2019re ready to start exploring larger levels.
+    Next up, we\u2019ll deal with the boring black background and learn how sorting
+    layers work so we can add a nice visual background.\r\n"

@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f6a93b863ca8314695b382c0c8c2b3d, type: 3}
+  m_Name: L1170_UI
+  m_EditorClassIdentifier: 
+  lectureCode: 1170
+  lectureSectionNumber: 17
+  lectureName: UI
+  lectureTitle: UI
+  frequentlyAskedQuestionListSO: {fileID: 11400000, guid: 420076b95be70af4884aa91e96578ee5,
+    type: 2}
+  quizListSO: {fileID: 11400000, guid: 49245721f864e154dab835fdddc1c006, type: 2}
+  exerciseListSO: {fileID: 0}
+  lectureDescription: "<h1>Lecture Summary: UI, StatsUI, Fuel, Velocity, Time, Score</h1>\r\n\r\nIn
+    this lecture, we finally gave our game a proper UI! We built a clean and functional
+    stats panel to display key gameplay info, score, time, velocity, and fuel, using
+    Unity\u2019s UI system and TextMeshPro.\r\n\r\nWe started by creating a `Canvas`
+    with screen space overlay and configured the scaler for resolution-independent
+    scaling based on screen height. Then we built a `StatsUI` panel in the corner
+    with labels and dynamic values. We connected it to the `GameManager` and `Lander`
+    scripts to pull data like score, game time, speed, and fuel, rounding numbers
+    for cleaner display.\r\n\r\nTo visualize speed direction, we added arrow images
+    that toggle based on velocity signs, and used `Mathf.Abs()` to keep the numbers
+    positive for clarity. For fuel, instead of just printing a number, we created
+    a nice sliding bar using Unity\u2019s `Image.fillAmount` feature with a simple
+    white pixel texture. We normalized the fuel value and kept the bar clamped at
+    the max.\r\n\r\nThe best part? Everything was built following clean code practices,
+    logic and visuals fully separated. The UI is purely visual and doesn\u2019t impact
+    gameplay logic. Super clean and super flexible. Next up, we\u2019ll build a result
+    screen for landings and crashes!\r\n"

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b77bfb2ebc4ee664ab63408f6b18e046, type: 3}
+  m_Name: FAQ_L1070_02
+  m_EditorClassIdentifier: 
+  title: What happens if I don't use `Time.deltaTime`?
+  text: Your game will behave differently depending on the framerate. On high FPS,
+    everything might move super fast. On low FPS, things crawl. You want movement
+    to be smooth and consistent, so always multiply your movement or forces by `deltaTime`.
+    That said, if you're writing movement code in `FixedUpdate`, you technically
+    don't need it since `FixedUpdate` already runs at a fixed rate. But if you're
+    writing movement code in `Update`, always use `Time.deltaTime`.

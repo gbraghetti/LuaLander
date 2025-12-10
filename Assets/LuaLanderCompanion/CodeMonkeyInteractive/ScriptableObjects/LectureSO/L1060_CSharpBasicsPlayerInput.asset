@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f6a93b863ca8314695b382c0c8c2b3d, type: 3}
+  m_Name: L1060_CSharpBasicsPlayerInput
+  m_EditorClassIdentifier: 
+  lectureCode: 1060
+  lectureSectionNumber: 6
+  lectureName: CSharpBasicsPlayerInput
+  lectureTitle: C# Basics, Player Input
+  frequentlyAskedQuestionListSO: {fileID: 11400000, guid: 15b9ef26cff16f645922d810dbf3a18c,
+    type: 2}
+  quizListSO: {fileID: 11400000, guid: a2fa65cca2f67d64396407fa45508be9, type: 2}
+  exerciseListSO: {fileID: 0}
+  lectureDescription: "<h1>Lecture Summary: C# Basics, Player Input</h1>\r\n\r\nIn
+    this lecture, we created our first custom script to control the lander and learned
+    the basics of C# and Unity\u2019s scripting flow. We started by creating a clean
+    `Scripts` folder, then added a new `Lander` MonoBehaviour script and attached
+    it to the logic (parent) GameObject, keeping logic and visuals separated.\r\n\r\nWe
+    covered how `Start()` runs once and `Update()` runs every frame, and emphasized
+    good coding practices like always explicitly writing access modifiers (`private`,
+    `public`, etc.) even if the default works.\r\n\r\nNext, we jumped into handling
+    player input. We explored Unity\u2019s two input systems, the legacy Input Manager
+    and the newer Input System. While the old one is simpler, we\u2019ll be using
+    the Input System in this course for its added flexibility.\r\n\r\nWe tested for
+    input using `Keyboard.current.upArrowKey.isPressed` to detect key presses each
+    frame, and showed how it compares to the legacy method using `Input.GetKey()`.
+    With the up, left, and right keys all being tracked, we now have the basic input
+    system working.\r\n\r\nIn the next lecture, we\u2019ll take this input and apply
+    some physics to actually move the lander around!\r\n"

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cf51161046453c40b9eaf63bfb19050, type: 3}
+  m_Name: Quiz_L1240_04
+  m_EditorClassIdentifier: 
+  question: "What\u2019s the purpose of making `scoreTotal` and `levelNumber` static
+    in `GameManager`?"
+  optionList:
+  - To make them editable from any GameObject
+  - To reset them automatically at game start
+  - To persist their values across scene loads
+  - To allow multiple scores to be tracked
+  correctOptionIndex: 2
+  answer: If they were not static then they would reset upon scene loading. Since
+    we want them to persist we need to make them static.

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cf51161046453c40b9eaf63bfb19050, type: 3}
+  m_Name: Quiz_L1190_01
+  m_EditorClassIdentifier: 
+  question: What value does the lander's gravity scale start at during the 'WaitingToStart'
+    state?
+  optionList:
+  - 1.0
+  - 0.7
+  - 0
+  - -9.8
+  correctOptionIndex: 2
+  answer: The gravity is disabled at the start (`gravityScale = 0`) to prevent the
+    lander from falling before the player provides input.

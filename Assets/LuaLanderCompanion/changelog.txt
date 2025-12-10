@@ -1,0 +1,14 @@
+#### v1.03 - 2025-08-25
+ * Fixed wrong Quiz on Sorting Order lecture
+
+
+#### v1.02 - 2025-08-09
+ * Fixed Companion Walkthrough data
+
+
+#### v1.01 - 2025-08-07
+ * Added Bonus Lectures
+
+
+#### v1.00 - 2025-07-28
+ * First Version

@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cf51161046453c40b9eaf63bfb19050, type: 3}
+  m_Name: Quiz_L1170_01
+  m_EditorClassIdentifier: 
+  question: "What is the purpose of the Canvas Scaler component in Unity\u2019s UI
+    system?"
+  optionList:
+  - It makes the UI scale based on the device's refresh rate.
+  - It prevents the UI from scaling at all.
+  - It controls how UI elements scale across different screen resolutions.
+  - It locks the UI to a fixed size.
+  correctOptionIndex: 2
+  answer: The Canvas Scaler ensures UI elements adjust based on screen resolution,
+    which is essential for making your game look correct on different resolutions
+    and screen sizes.

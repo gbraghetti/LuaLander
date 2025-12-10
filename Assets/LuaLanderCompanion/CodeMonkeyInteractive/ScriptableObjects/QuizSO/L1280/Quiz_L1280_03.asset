@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cf51161046453c40b9eaf63bfb19050, type: 3}
+  m_Name: Quiz_L1280_03
+  m_EditorClassIdentifier: 
+  question: What is the role of the `WindZoneVisual` script?
+  optionList:
+  - It spawns new wind zones
+  - It animates the background
+  - It rotates visual arrows to match wind direction
+  - It displays the wind zone's collider
+  correctOptionIndex: 2
+  answer: The `WindZoneVisual` script receives a list of arrow transforms and rotates
+    them so their `right` vector matches the wind force direction, providing visual
+    feedback to the player.

@@ -1,0 +1,24 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <ui:Template name="QuizSingle" src="project://database/Assets/LuaLanderCompanion/CodeMonkeyInteractive/Editor/Quiz/QuizSingle.uxml?fileID=9197481963319205126&amp;guid=c412fd64b7d98744db2b7c47361cd8bf&amp;type=3#QuizSingle" />
+    <ui:Template name="QuizOptionSingle" src="project://database/Assets/LuaLanderCompanion/CodeMonkeyInteractive/Editor/Quiz/QuizOptionSingle.uxml?fileID=9197481963319205126&amp;guid=c53856d1265f8ec408205bafa071d88c&amp;type=3#QuizOptionSingle" />
+    <Style src="project://database/Assets/LuaLanderCompanion/CodeMonkeyInteractive/Editor/Quiz/QuizWindow.uss?fileID=7433441132597879392&amp;guid=f0862cb81a1fcb740ad997662033c0d6&amp;type=3#QuizWindow" />
+    <ui:VisualElement name="main" style="flex-grow: 1;">
+        <ui:Label text="QUIZ" name="title" class="header" />
+        <uie:ObjectField name="scriptableObjectField" type="CodeMonkey.CSharpCourse.Interactive.LectureSO, CodeMonkeyInteractive" style="margin-top: 5px; margin-right: 5px; margin-bottom: 5px; margin-left: 5px;" />
+        <ui:ScrollView scroll-deceleration-rate="0,135" elasticity="0,1" name="quizList">
+            <ui:Instance template="QuizSingle" name="QuizSingle" />
+        </ui:ScrollView>
+        <ui:VisualElement name="quizSingleContainer" style="flex-grow: 1;">
+            <ui:Label tabindex="-1" text="Question" parse-escape-sequences="true" display-tooltip-when-elided="true" name="questionText" style="margin-top: 5px; margin-right: 5px; margin-bottom: 5px; margin-left: 5px; -unity-font-style: bold; -unity-text-align: middle-center; white-space: normal; text-overflow: clip;" />
+            <ui:VisualElement name="optionContainer" style="flex-grow: 0; min-height: auto; height: auto; flex-shrink: 0;">
+                <ui:Instance template="QuizOptionSingle" name="QuizOptionSingle" />
+            </ui:VisualElement>
+            <ui:ScrollView scroll-deceleration-rate="0,135" elasticity="0,1" name="answerScrollView">
+                <ui:Label tabindex="-1" text="Answer" parse-escape-sequences="true" display-tooltip-when-elided="true" name="answerLabel" style="font-size: 14px; white-space: normal; margin-top: 8px; margin-right: 8px; margin-bottom: 8px; margin-left: 8px; -unity-font-style: bold;" />
+                <ui:VisualElement name="answerContainerVisualElement" style="flex-grow: 1;" />
+            </ui:ScrollView>
+            <ui:Button text="Next" parse-escape-sequences="true" display-tooltip-when-elided="true" name="nextButton" style="margin-top: 15px; margin-right: 5px; margin-bottom: 5px; margin-left: 5px; -unity-font-style: bold; height: 40px;" />
+            <ui:Button text="Back" parse-escape-sequences="true" display-tooltip-when-elided="true" name="backButton" style="margin-top: 15px; margin-right: 5px; margin-bottom: 5px; margin-left: 5px; -unity-font-style: bold; height: 40px;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

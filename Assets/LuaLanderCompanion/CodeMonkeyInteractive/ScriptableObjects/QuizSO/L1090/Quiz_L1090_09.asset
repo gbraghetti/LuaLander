@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cf51161046453c40b9eaf63bfb19050, type: 3}
+  m_Name: Quiz_L1090_09
+  m_EditorClassIdentifier: 
+  question: "What is the result of manually modifying the Main Camera\u2019s settings
+    after adding Cinemachine?"
+  optionList:
+  - It crashes Unity
+  - It creates a second camera
+  - Nothing happens, the settings are overridden
+  - The camera detaches from the scene
+  correctOptionIndex: 2
+  answer: Once Cinemachine is active, changes to the Main Camera are ignored because
+    it's now controlled by the Virtual Camera.

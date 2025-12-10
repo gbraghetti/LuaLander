@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cf51161046453c40b9eaf63bfb19050, type: 3}
+  m_Name: Quiz_L1060_03
+  m_EditorClassIdentifier: 
+  question: What is the difference between the Input Manager and the Input System?
+  optionList:
+  - Input System is older, Input Manager is newer
+  - Input System is more capable while the Input Manager is older
+  - Input Manager uses UI elements only
+  - Input Manager is required for mobile input
+  correctOptionIndex: 1
+  answer: "The Input System is Unity\u2019s newer and more flexible way of handling
+    input. It supports things like multiple devices, multiple device types and easily
+    remappable controls."

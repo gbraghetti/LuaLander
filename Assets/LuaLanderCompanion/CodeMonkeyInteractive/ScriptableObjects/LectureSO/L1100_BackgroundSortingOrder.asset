@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f6a93b863ca8314695b382c0c8c2b3d, type: 3}
+  m_Name: L1100_BackgroundSortingOrder
+  m_EditorClassIdentifier: 
+  lectureCode: 1100
+  lectureSectionNumber: 10
+  lectureName: BackgroundSortingOrder
+  lectureTitle: Background, Sorting Order
+  frequentlyAskedQuestionListSO: {fileID: 11400000, guid: 1666e704fcc16db49b9c7d39023724b2,
+    type: 2}
+  quizListSO: {fileID: 11400000, guid: 6942ced8c04a59b41a1d262a3b51d5c9, type: 2}
+  exerciseListSO: {fileID: 0}
+  lectureDescription: "<h1>Lecture Summary: Background, Sorting Order</h1>\r\n\r\nIn
+    this lecture, we added a nice starry background to replace the boring default
+    sky color and learned all about 2D sorting order in Unity. We started by creating
+    a new sprite for the background and used **Tiled Draw Mode** so the texture repeats
+    nicely without stretching. Just make sure to keep the scale at (1,1,1) to avoid
+    weird issues, and don\u2019t go overboard with the size, 200x200 works great.\r\n\r\nThen
+    we explored how Unity handles 2D render order using **Sorting Layers** and **Sorting
+    Order**. Sorting Layers let you group sprites and decide which ones should render
+    in front or behind others,like putting the background layer behind the default
+    layer. Sorting Order lets you fine-tune the rendering within the same layer,
+    which is super useful for things like making sure the lander always appears on
+    top of the terrain.\r\n\r\nWith all that set up, our game now has a nice looking
+    background and everything renders in the right order. In the next lecture, we\u2019ll
+    move on to detecting if the lander is landing safely or crashing into the terrain.\r\n"

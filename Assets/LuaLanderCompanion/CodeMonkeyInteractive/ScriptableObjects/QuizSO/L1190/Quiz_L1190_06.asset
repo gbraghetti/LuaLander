@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cf51161046453c40b9eaf63bfb19050, type: 3}
+  m_Name: Quiz_L1190_06
+  m_EditorClassIdentifier: 
+  question: Why is using `SceneManager.LoadScene(0)` considered a temporary solution?
+  optionList:
+  - Scene 0 might not always exist.
+  - Magic numbers should be avoided, and a proper loader will be added later.
+  - It reloads the entire Unity Editor.
+  - It breaks prefab connections.
+  correctOptionIndex: 1
+  answer: Using raw scene indexes (like `0`) is a magic number; the plan is to refactor
+    this with a more robust loader system later.

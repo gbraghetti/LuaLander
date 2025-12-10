@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cf51161046453c40b9eaf63bfb19050, type: 3}
+  m_Name: Quiz_L1020_07
+  m_EditorClassIdentifier: 
+  question: "What does the \u201CF\u201D key do in Scene view after selecting a GameObject?"
+  optionList:
+  - Fixes camera rotation
+  - Forces compilation
+  - Focuses on the selected object
+  - Flips the object horizontally
+  correctOptionIndex: 2
+  answer: Super handy for when you get lost in Scene view. Select an object and press
+    `F` to center the view on it.

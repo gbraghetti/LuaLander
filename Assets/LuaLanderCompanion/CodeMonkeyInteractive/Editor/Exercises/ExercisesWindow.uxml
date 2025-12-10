@@ -1,0 +1,35 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <ui:Template name="ExerciseListSingle" src="project://database/Assets/LuaLanderCompanion/CodeMonkeyInteractive/Editor/Exercises/ExerciseListSingle.uxml?fileID=9197481963319205126&amp;guid=39664a75b3a63c745aa8a5aab22d106b&amp;type=3#ExerciseListSingle" />
+    <Style src="project://database/Assets/LuaLanderCompanion/CodeMonkeyInteractive/Editor/Exercises/ExercisesWindow.uss?fileID=7433441132597879392&amp;guid=247fa9ed0c693554f9166918cbca9598&amp;type=3#ExercisesWindow" />
+    <ui:VisualElement name="main" style="flex-grow: 1;">
+        <ui:Label text="EXERCISES" name="title" class="header" />
+        <uie:ObjectField name="scriptableObjectField" type="CodeMonkey.CSharpCourse.Interactive.LectureSO, CodeMonkeyInteractive" style="margin-top: 5px; margin-right: 5px; margin-bottom: 5px; margin-left: 5px;" />
+        <ui:ScrollView scroll-deceleration-rate="0,135" elasticity="0,1" name="exercisesScrollView">
+            <ui:Instance template="ExerciseListSingle" name="ExerciseListSingle" />
+        </ui:ScrollView>
+        <ui:VisualElement name="exerciseSingleContainer" style="flex-grow: 1; height: 100%;">
+            <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="exerciseNameLabel" style="margin-top: 5px; margin-right: 5px; margin-bottom: 5px; margin-left: 5px; -unity-font-style: bold; font-size: 14px; white-space: normal; -unity-text-align: middle-center;" />
+            <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="topMessageLabel" style="background-color: rgb(255, 229, 0); white-space: normal; -unity-text-align: middle-center; -unity-font-style: normal; color: rgb(0, 0, 0);" />
+            <ui:Label tabindex="-1" text="Here you learned..." parse-escape-sequences="true" display-tooltip-when-elided="true" name="completedLabel" style="font-size: 12px; -unity-text-align: upper-left; white-space: normal; margin-top: 5px; margin-right: 5px; margin-bottom: 5px; margin-left: 5px; border-left-color: rgb(31, 255, 0); border-right-color: rgb(31, 255, 0); border-top-color: rgb(31, 255, 0); border-bottom-color: rgb(31, 255, 0); border-top-width: 6px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; background-color: rgb(82, 82, 82); color: rgb(255, 255, 255);" />
+            <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="exerciseTextLabel" style="font-size: 12px; -unity-text-align: upper-left; white-space: normal; margin-top: 5px; margin-right: 5px; margin-bottom: 5px; margin-left: 5px;" />
+            <ui:Button text="OPEN Exercise.cs" parse-escape-sequences="true" display-tooltip-when-elided="true" name="openExerciseButton" style="height: 40px; margin-top: 5px; margin-right: 5px; margin-bottom: 5px; margin-left: 5px; -unity-font-style: bold; white-space: normal;" />
+            <ui:Button text="START/STOP EXERCISE" parse-escape-sequences="true" display-tooltip-when-elided="true" name="startStopButton" style="height: 40px; margin-top: 5px; margin-right: 5px; margin-bottom: 5px; margin-left: 5px; -unity-font-style: bold; white-space: normal;" />
+            <ui:Button text="Video Walkthrough" parse-escape-sequences="true" display-tooltip-when-elided="true" name="videoWalkthroughButton" style="height: 40px; margin-top: 5px; margin-right: 5px; margin-bottom: 5px; margin-left: 5px; -unity-font-style: bold; white-space: normal;" />
+            <ui:VisualElement name="buttonsContainer" style="flex-grow: 0; flex-direction: row;">
+                <ui:Button text="SHOW\nHINT" parse-escape-sequences="true" display-tooltip-when-elided="true" name="showHintButton" style="flex-direction: column; flex-grow: 1;" />
+                <ui:Button text="SHOW\nSOLUTION" parse-escape-sequences="true" display-tooltip-when-elided="true" name="showSolutionButton" style="flex-direction: column; flex-grow: 1;" />
+                <ui:Button text="APPLY\nSOLUTION" parse-escape-sequences="true" display-tooltip-when-elided="true" name="applySolutionButton" style="flex-direction: column; flex-grow: 1;" />
+            </ui:VisualElement>
+            <ui:VisualElement style="flex-grow: 1; height: auto; background-color: rgba(0, 0, 0, 0); flex-direction: column-reverse;">
+                <ui:Button text="Back" parse-escape-sequences="true" display-tooltip-when-elided="true" name="backButton" style="margin-top: 5px; height: 40px; font-size: 12px; -unity-font-style: bold; margin-bottom: 10px;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="over" style="flex-grow: 1; position: absolute; height: 100%; border-left-color: rgb(255, 219, 0); border-right-color: rgb(255, 219, 0); border-top-color: rgb(255, 219, 0); border-bottom-color: rgb(255, 219, 0); border-top-width: 3px; border-right-width: 3px; border-bottom-width: 3px; border-left-width: 3px; flex-shrink: 0; width: 100%; background-color: rgba(0, 0, 0, 0.84); justify-content: flex-start; flex-direction: column; align-items: stretch; display: none; visibility: visible;">
+                <ui:Label tabindex="-1" text="HINT" parse-escape-sequences="true" display-tooltip-when-elided="true" name="overTitleLabel" style="margin-top: 5px; margin-right: 5px; margin-bottom: 5px; margin-left: 5px; -unity-font-style: bold; color: rgb(255, 255, 255); -unity-text-align: upper-center; white-space: normal; font-size: 15px;" />
+                <ui:Label tabindex="-1" text="Hint Text" parse-escape-sequences="true" display-tooltip-when-elided="true" name="overTextLabel" style="margin-top: 5px; margin-right: 5px; margin-bottom: 5px; margin-left: 5px; -unity-font-style: normal; color: rgb(255, 255, 255); -unity-text-align: upper-left; white-space: normal; font-size: 12px;" />
+                <ui:VisualElement style="flex-grow: 1; flex-direction: column-reverse;">
+                    <ui:Button text="Back" parse-escape-sequences="true" display-tooltip-when-elided="true" name="overCloseButton" style="margin-top: 5px; height: 30px; font-size: 12px; -unity-font-style: bold; align-self: auto; flex-direction: column-reverse; justify-content: flex-start; align-items: auto; -unity-text-align: middle-center; flex-basis: auto; bottom: auto; position: relative; overflow: visible; flex-grow: 0; left: auto; top: auto; flex-wrap: nowrap;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b77bfb2ebc4ee664ab63408f6b18e046, type: 3}
+  m_Name: FAQ_L1180_03
+  m_EditorClassIdentifier: 
+  title: Can I animate the Landed UI window instead of just enabling it?
+  text: "Yup! You can use Unity\u2019s built-in Animator or tweening libraries like
+    DOTween to animate its appearance. Just call your animation instead of `SetActive(true)`
+    in the `Show()` method."

@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cf51161046453c40b9eaf63bfb19050, type: 3}
+  m_Name: Quiz_L1260_07
+  m_EditorClassIdentifier: 
+  question: How is the cargo transported with physics?
+  optionList:
+  - It is parented to the lander directly
+  - It uses Rigidbody2D with BoxCollider2D and is connected via HingeJoint2D
+  - It follows the lander using transform position
+  - "It\u2019s animated via Animator"
+  correctOptionIndex: 1
+  answer: The cargo crate is connected to the rope using another HingeJoint2D. The
+    crate has its own Rigidbody2D and BoxCollider2D, which allows it to be fully
+    simulated by Unity's 2D physics system. This creates a realistic swinging behavior
+    as the lander moves.

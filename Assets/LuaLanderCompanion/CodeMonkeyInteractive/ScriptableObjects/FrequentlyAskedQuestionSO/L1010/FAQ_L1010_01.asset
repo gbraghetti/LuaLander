@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b77bfb2ebc4ee664ab63408f6b18e046, type: 3}
+  m_Name: FAQ_L1010_01
+  m_EditorClassIdentifier: 
+  title: Why are we using Unity 6.1 instead of an older version like 2020 LTS?
+  text: Unity 6.1 is the latest stable Supported version with better support for
+    URP and the latest features. It ensures everything works smoothly and is future-proofed
+    for modern development.

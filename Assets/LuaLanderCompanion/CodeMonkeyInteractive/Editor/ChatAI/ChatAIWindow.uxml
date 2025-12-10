@@ -1,0 +1,16 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/CodeMonkeyInteractive/Editor/ChatAI/ChatAIWindow.uss?fileID=7433441132597879392&amp;guid=f66b2d5544f9e47468e03f4a431e08d8&amp;type=3#ChatAIWindow" />
+    <ui:VisualElement name="main" style="flex-grow: 1;">
+        <ui:Label text="Chat with AI" name="title" class="header" />
+        <ui:Label text="The bot was trained on the contents of the course, you can ask it anything" name="botLabel" style="-unity-text-align: upper-center; white-space: normal; font-size: 12px;" />
+        <ui:VisualElement style="flex-grow: 0; flex-direction: row-reverse; margin-top: 4px; margin-bottom: 4px; flex-shrink: 0;">
+            <ui:Button text="SEND" parse-escape-sequences="true" display-tooltip-when-elided="true" name="sendButton" style="flex-grow: 0;" />
+            <ui:TextField picking-mode="Ignore" name="inputTextField" style="font-size: 12px; flex-grow: 1;" />
+        </ui:VisualElement>
+        <ui:Label text="..." name="questionLabel" style="-unity-text-align: upper-center; white-space: normal; font-size: 12px; flex-wrap: wrap; -unity-font-style: bold; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px;" />
+        <ui:ScrollView scroll-deceleration-rate="0,135" elasticity="0,1">
+            <ui:VisualElement name="textVisualElement" style="flex-grow: 1;" />
+            <ui:Label tabindex="-1" text="&lt;color=#ffff00&gt;ERROR: &lt;/color&gt;Message" parse-escape-sequences="true" display-tooltip-when-elided="true" name="companionLabel" style="font-size: 12px; margin-top: 5px; margin-right: 5px; margin-bottom: 5px; margin-left: 5px; white-space: normal; display: none;" />
+        </ui:ScrollView>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,6 @@
+﻿<Solution>
+  <Project Path="CodeMonkeyUtils.csproj" />
+  <Project Path="Assembly-CSharp.csproj" />
+  <Project Path="CodeMonkeyCompanion.csproj" />
+  <Project Path="CodeMonkeyInteractive.csproj" />
+</Solution>

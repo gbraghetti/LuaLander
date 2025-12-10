@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f6a93b863ca8314695b382c0c8c2b3d, type: 3}
+  m_Name: L1210_Zoom
+  m_EditorClassIdentifier: 
+  lectureCode: 1210
+  lectureSectionNumber: 21
+  lectureName: Zoom
+  lectureTitle: Zoom
+  frequentlyAskedQuestionListSO: {fileID: 11400000, guid: 84c0544cd9fce914a90e180e74368ab2,
+    type: 2}
+  quizListSO: {fileID: 11400000, guid: 84f8ec3c5b03eb8429fa3fd35a0e3622, type: 2}
+  exerciseListSO: {fileID: 0}
+  lectureDescription: "<h1>Lecture Summary: Zoom</h1>\r\n\r\nIn this lecture, we
+    added a smooth cinematic zoom-out at the start of each level so players can see
+    the whole map and plan their path before launching. Each level now includes a
+    `CameraStartTarget` transform that defines where the camera should initially
+    focus. We used Cinemachine to handle camera tracking, at the beginning, we target
+    this level overview, and when the player starts moving, we switch the camera
+    back to follow the lander.\r\n\r\nFor the zoom itself, Cinemachine didn\u2019t
+    support automatic 2D zooming, so we made our own simple script. We created a
+    `CinemachineCameraZoom2D` class that smoothly interpolates the camera\u2019s
+    orthographic size using `Mathf.Lerp`, giving a clean, polished zoom effect. We
+    set a larger orthographic size at the beginning to show the whole level, and
+    then zoom back in to a constant size (like 10) once the player starts flying.\r\n\r\nThis
+    makes the game feel more dynamic and gives players important context to choose
+    their own difficulty, play it safe or go for the risky high-score zones. Everything\u2019s
+    nice and smooth, fully dynamic per level, and keeps our clean architecture intact.
+    Great job, and now the game\u2019s feeling even more polished!\r\n"

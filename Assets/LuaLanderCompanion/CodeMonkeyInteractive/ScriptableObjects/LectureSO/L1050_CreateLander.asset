@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f6a93b863ca8314695b382c0c8c2b3d, type: 3}
+  m_Name: L1050_CreateLander
+  m_EditorClassIdentifier: 
+  lectureCode: 1050
+  lectureSectionNumber: 5
+  lectureName: CreateLander
+  lectureTitle: Create Lander
+  frequentlyAskedQuestionListSO: {fileID: 11400000, guid: b1aac5a525bf1584f92f8f5141c15b0a,
+    type: 2}
+  quizListSO: {fileID: 11400000, guid: 30c79ac3207bffe4d8e2131d516cc809, type: 2}
+  exerciseListSO: {fileID: 0}
+  lectureDescription: "<h1>Lecture Summary: Create Lander</h1>\r\n\r\nIn this lecture,
+    we created the player object, the lander, and did it properly by separating visuals
+    from logic. Instead of just dragging the sprite and slapping physics on it, we
+    made a clean setup using an empty parent GameObject named \"Lander\" for logic,
+    and added the sprite as a child for visuals. This way, any visual changes (like
+    resizing or swapping sprites) won\u2019t mess with the game\u2019s logic.\r\n\r\nWe
+    added a Rigidbody2D to the parent to enable physics, and just like that, the
+    lander starts falling with gravity. To make it interact with the world, we added
+    a BoxCollider2D to the lander and set up a floor with another BoxCollider2D.
+    This got basic collisions working.\r\n\r\nOne important tip covered here: always
+    use the 2D versions of physics components in 2D games. Mixing 2D and 3D colliders
+    or rigidbodies causes physics to break since those two systems are completely
+    separate, so double-check your components if things act weird.\r\n\r\nWe also
+    tweaked the collider size to match the visual, making it a bit smaller for more
+    forgiving gameplay. With this setup, the lander falls and lands perfectly. Next
+    up, we\u2019ll write some code to give it player controls!\r\n"

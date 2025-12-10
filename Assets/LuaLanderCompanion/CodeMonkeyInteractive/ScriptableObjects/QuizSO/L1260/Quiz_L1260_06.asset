@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cf51161046453c40b9eaf63bfb19050, type: 3}
+  m_Name: Quiz_L1260_06
+  m_EditorClassIdentifier: 
+  question: What scripting pattern is used to keep logic and visuals separate in
+    this feature?
+  optionList:
+  - MonoBehaviour inheritance
+  - Events (observer pattern)
+  - Coroutine management
+  - Singleton pattern
+  correctOptionIndex: 1
+  answer: Events are used to communicate changes (like interaction timer progress)
+    between the CargoArea (logic) and CargoAreaVisual (visual). This pattern keeps
+    code clean, modular, and easier to manage or expand later without tightly coupling
+    UI with logic.

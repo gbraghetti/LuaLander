@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f6a93b863ca8314695b382c0c8c2b3d, type: 3}
+  m_Name: L1150_FuelPickups
+  m_EditorClassIdentifier: 
+  lectureCode: 1150
+  lectureSectionNumber: 15
+  lectureName: FuelPickups
+  lectureTitle: Fuel, Pickups
+  frequentlyAskedQuestionListSO: {fileID: 11400000, guid: 0db0f352e1504b5429c90f9555e94953,
+    type: 2}
+  quizListSO: {fileID: 11400000, guid: e3c833202944521429663ecf7160ed13, type: 2}
+  exerciseListSO: {fileID: 0}
+  lectureDescription: "<h1>Lecture Summary: Fuel, Pickups</h1>\r\n\r\nIn this lecture,
+    we added a fuel system to make flying more challenging and rewarding. The lander
+    now starts with a limited amount of fuel, and using the thrusters consumes it
+    over time. We made sure to factor in `Time.deltaTime` so the fuel drains consistently
+    across different frame rates. We also made a design decision: fuel is consumed
+    whenever *any* thrust is applied, up, left, or right, keeping it nice and simple.\r\n\r\nOnce
+    fuel hits zero, the lander can no longer move, which adds a great gameplay twist.\r\n\r\nNext,
+    we built a fuel pickup. We created a simple sprite with a trigger collider and
+    added a new `FuelPickup` script just for identification (no relying on tags or
+    names, clean code all the way). When the lander enters the trigger and detects
+    a `FuelPickup`, it adds more fuel and destroys the pickup with a `DestroySelf()`
+    method.\r\n\r\nWe turned it into a prefab so we could easily place more pickups
+    throughout the level. Everything works smoothly: fuel drains as you fly, and
+    you can refill it by collecting pickups.\r\n\r\nUp next, we\u2019ll use the same
+    pickup system to add collectible coins for bonus score!\r\n"

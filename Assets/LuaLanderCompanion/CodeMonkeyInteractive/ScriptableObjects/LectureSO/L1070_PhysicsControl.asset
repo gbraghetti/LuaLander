@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f6a93b863ca8314695b382c0c8c2b3d, type: 3}
+  m_Name: L1070_PhysicsControl
+  m_EditorClassIdentifier: 
+  lectureCode: 1070
+  lectureSectionNumber: 7
+  lectureName: PhysicsControl
+  lectureTitle: Physics Control
+  frequentlyAskedQuestionListSO: {fileID: 11400000, guid: 2dea7bd8a7bd0e843b4ddc988686ff62,
+    type: 2}
+  quizListSO: {fileID: 11400000, guid: 012fe8a8db8571a4bb918f10ee38cbe3, type: 2}
+  exerciseListSO: {fileID: 0}
+  lectureDescription: "<h1>Lecture Summary: Physics Control</h1>\r\n\r\nIn this lecture,
+    we took the next big step and gave our lander full player-controlled physics-based
+    movement. First, we got a reference to the Rigidbody2D component using `GetComponent<Rigidbody2D>()`,
+    storing it privately in `Awake()` for clean and efficient access. We reinforced
+    the importance of setting access modifiers explicitly, always prefer `private`
+    unless there's a specific reason to expose something.\r\n\r\nTo control the lander\u2019s
+    movement, we used `FixedUpdate()` instead of `Update()`, since physics updates
+    at a consistent interval, making it the right place to apply forces. We applied
+    an upward force using `transform.up`, which accounts for the lander's local rotation,
+    and showed why hardcoding global up (`Vector3.up`) wouldn\u2019t work when the
+    lander is rotated.\r\n\r\nWe also added rotation using `AddTorque()` for turning
+    left and right, and made sure to multiply all forces by `Time.deltaTime` to keep
+    everything framerate-independent. This ensures smooth, consistent behavior across
+    different machines.\r\n\r\nFinally, we cleaned up the code by replacing \u201Cmagic
+    numbers\u201D with clearly named variables like `force` and `turnSpeed`, keeping
+    things readable and maintainable. With that, we now had a controllable lander,
+    falling with gravity and reacting to input. Next up: we replace the boring floor
+    with some real terrain!\r\n"

@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/CodeMonkeyInteractive/Editor/Companion/CompanionWindow.uss?fileID=7433441132597879392&amp;guid=3a0251d84f2ebc245acd013cc3ec656b&amp;type=3#CompanionWindow" />
+    <ui:VisualElement name="main" style="flex-grow: 1;">
+        <ui:Label text="CODE MONKEY COMPANION" name="title" class="header" />
+        <ui:ScrollView scroll-deceleration-rate="0,135" elasticity="0,1">
+            <ui:VisualElement name="textVisualElement" style="flex-grow: 1;" />
+            <ui:Label tabindex="-1" text="&lt;color=#ffff00&gt;ERROR: &lt;/color&gt;Message" parse-escape-sequences="true" display-tooltip-when-elided="true" name="companionLabel" style="font-size: 12px; margin-top: 5px; margin-right: 5px; margin-bottom: 5px; margin-left: 5px; white-space: normal; display: none;" />
+        </ui:ScrollView>
+    </ui:VisualElement>
+</ui:UXML>

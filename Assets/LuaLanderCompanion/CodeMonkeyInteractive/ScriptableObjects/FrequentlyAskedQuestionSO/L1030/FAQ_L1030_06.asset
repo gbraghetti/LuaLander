@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b77bfb2ebc4ee664ab63408f6b18e046, type: 3}
+  m_Name: FAQ_L1030_06
+  m_EditorClassIdentifier: 
+  title: "What\u2019s a Volume Profile?"
+  text: "It\u2019s basically a container for all your post processing settings. You
+    assign it to a Volume (like a Global Volume), and Unity uses those settings to
+    apply visual effects to the game camera. You can reuse the same Volume Profile
+    across multiple Volume components (like in different scenes)."

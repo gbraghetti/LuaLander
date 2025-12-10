@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0596a4b009226964a810aa8842024ccb, type: 3}
+  m_Name: CodeMonkeyInteractiveSO
+  m_EditorClassIdentifier: 
+  currentVersion: 1.03
+  quizStateList: []
+  frequentlyAskedQuestionStateList: []
+  exerciseStateList: []
+  lectureListSO: {fileID: 11400000, guid: c1af4d7cadebe754fa5ac3880e0890f9, type: 2}
+  defaultScene: {fileID: 102900000, guid: bb81c32a07e112643ac0b41e5f2d830a, type: 3}
+  activeExerciseSO: {fileID: 0}
+  lastSelectedLectureSO: {fileID: 11400000, guid: 790c70be8e2ecba4ba9dd582fe90022b, type: 2}
+  checkedLastUpdateTimestamp: 1761785433
+  lastUpdateVersion: 1.03
+  lastQOTDResponse:
+    questionId: 236
+    questionText: Can Color ever be null?
+    answerA: Yes, always
+    answerB: No
+    answerC: Yes, as Nullable
+    answerD: 
+    answerE: 
+  lastQotdTimestamp: 1761785433
+  websiteLatestMessage:
+    text: 'Hi there!
+
+      Thanks for picking up the course, I hope it helps you
+      a ton in your learning journey of making awesome 2D games!
+
+      I''m always
+      available in the course comments if you need help with anything.
+
+      - Code
+      Monkey
+
+
+      Join the <b>Private Discord</b> and <b>Weekly Private Livestreams</b>
+      where I''m there to answer any questions you have.<br><a href=''https://cmonkey.co/lualanderprivate''>https://cmonkey.co/lualanderprivate</a>'
+  websiteLatestMessageTimestamp: 1761785433
+  websiteDynamicMessage:
+    text: <u>Fresh Assets on Sale!</u>
+    url: https://cmonkey.co/unityassetstore
+  websiteDynamicMessageTimestamp: 1761785433
+  websiteLatestVideos:
+    videos:
+    - youTubeId: UGhId8Zd3eM
+      title: BEST NEW Visual Assets to INSPIRE YOU! (OCTOBER 2025)
+    - youTubeId: qX5m_EH4Wbo
+      title: How to FAIL with 100k WISHLISTS!
+    - youTubeId: wBoRaQQm9WE
+      title: TOP 10 NEW Systems and Tools OCTOBER 2025! | Unity Asset Store
+    - youTubeId: arIZP7op9WQ
+      title: My TECH Stack as a Game Developer, YouTuber and Web Dev!
+  websiteLatestVideosTimestamp: 1761785433
+  lastChatAIQuestionAsked: can you answer me in portuguese?
+  lastChatAIQuestionAnswer: "Claro, posso responder em portugu\xEAs! Como posso ajudar
+    hoje?\n\n"
+  lastChatAIResponseAskSuccess:
+    code: 1
+    runId: run_n3ByCNms7YfMrgl0DzutWNXV
+    threadId: thread_J00USijRYxwWZPFMe111K6Er

@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f6a93b863ca8314695b382c0c8c2b3d, type: 3}
+  m_Name: L1300_BonusTurrets
+  m_EditorClassIdentifier: 
+  lectureCode: 1300
+  lectureSectionNumber: 30
+  lectureName: BonusTurrets
+  lectureTitle: 'BONUS: Turrets'
+  frequentlyAskedQuestionListSO: {fileID: 11400000, guid: c1acf8898992b5c4393bd92ecc3c96d2,
+    type: 2}
+  quizListSO: {fileID: 11400000, guid: ddd8571bb340b8a44931d352e67889c3, type: 2}
+  exerciseListSO: {fileID: 0}
+  lectureDescription: "<h1>Lecture Summary: Turrets</h1>\n\nIn this lecture, we added
+    some awesome turrets to make the levels more dangerous and exciting! These turrets
+    track the player\u2019s position and shoot bullets that the player needs to dodge\u2014otherwise,
+    it's game over.\n\nWe started by importing the turret assets and building a proper
+    turret GameObject with separate base and head objects. This allowed the head
+    to rotate independently and aim at the player using some basic vector math. To
+    prevent them from shooting across the map, we added a range check so the turret
+    only activates when the lander is nearby.\n\nNext, we made the bullets. They're
+    simple prefabs with a Rigidbody2D and a collider, and we control their movement
+    using a TurretBullet script that applies velocity in the aim direction. We also
+    added a timer to make sure bullets get destroyed after a few seconds so they
+    don\u2019t pile up and cause lag.\n\nWith all that done, we placed a few turrets
+    in the level, tested it, and yup\u2014everything worked perfectly. They aim,
+    shoot, and force the player to stay alert and maneuver carefully.\n\nAlright
+    awesome!"

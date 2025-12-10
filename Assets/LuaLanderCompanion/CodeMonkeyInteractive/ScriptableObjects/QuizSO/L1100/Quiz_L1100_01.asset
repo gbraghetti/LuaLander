@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cf51161046453c40b9eaf63bfb19050, type: 3}
+  m_Name: Quiz_L1100_01
+  m_EditorClassIdentifier: 
+  question: What is the purpose of sorting order in Unity 2D?
+  optionList:
+  - To organize assets in folders
+  - To determine which sprite appears in front or behind
+  - To align physics with UI elements
+  - To control animation speed
+  correctOptionIndex: 1
+  answer: "Sorting order defines the visual stacking order of 2D sprites, who\u2019s
+    in front and who\u2019s behind."

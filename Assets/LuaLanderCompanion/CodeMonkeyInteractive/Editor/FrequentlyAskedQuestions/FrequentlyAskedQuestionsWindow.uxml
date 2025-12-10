@@ -1,0 +1,19 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <ui:Template name="FrequentlyAskedQuestionSingle" src="project://database/Assets/LuaLanderCompanion/CodeMonkeyInteractive/Editor/FrequentlyAskedQuestions/FrequentlyAskedQuestionSingle.uxml?fileID=9197481963319205126&amp;guid=251ac9767bccabe46a25a5cc0b4e5069&amp;type=3#FrequentlyAskedQuestionSingle" />
+    <Style src="project://database/Assets/LuaLanderCompanion/CodeMonkeyInteractive/Editor/FrequentlyAskedQuestions/FrequentlyAskedQuestionsWindow.uss?fileID=7433441132597879392&amp;guid=a35a4751a166adf4bb6e2cd041c7dd59&amp;type=3#FrequentlyAskedQuestionsWindow" />
+    <ui:VisualElement name="main" style="flex-grow: 1;">
+        <ui:Label text="FREQUENTLY ASKED QUESTIONS" name="title" class="header" />
+        <uie:ObjectField name="scriptableObjectField" type="CodeMonkey.CSharpCourse.Interactive.LectureSO, CodeMonkeyInteractive" style="margin-top: 5px; margin-right: 5px; margin-bottom: 5px; margin-left: 5px; flex-grow: 0;" />
+        <ui:ScrollView scroll-deceleration-rate="0,135" elasticity="0,1" name="questionList" style="height: 300px; flex-grow: 1;">
+            <ui:Instance template="FrequentlyAskedQuestionSingle" name="FrequentlyAskedQuestionSingle" />
+        </ui:ScrollView>
+        <ui:VisualElement name="questionSingleContainer" style="flex-grow: 1;">
+            <ui:Label tabindex="-1" text="Why do this?" parse-escape-sequences="true" display-tooltip-when-elided="true" name="title" style="-unity-font-style: bold; -unity-text-align: middle-center; margin-top: 5px; margin-right: 5px; margin-bottom: 5px; margin-left: 5px; font-size: 16px; white-space: normal;" />
+            <ui:ScrollView scroll-deceleration-rate="0,135" elasticity="0,1" style="flex-grow: 0;">
+                <ui:VisualElement name="textContainerVisualElement" style="flex-grow: 1;" />
+            </ui:ScrollView>
+            <ui:Button text="Next" parse-escape-sequences="true" display-tooltip-when-elided="true" name="nextButton" style="margin-top: 5px; height: 40px; font-size: 12px; -unity-font-style: bold;" />
+            <ui:Button text="Back" parse-escape-sequences="true" display-tooltip-when-elided="true" name="backButton" style="margin-top: 5px; height: 40px; font-size: 12px; -unity-font-style: bold;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

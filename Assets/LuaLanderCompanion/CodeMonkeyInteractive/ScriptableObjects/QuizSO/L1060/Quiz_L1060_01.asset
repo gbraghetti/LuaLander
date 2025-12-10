@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cf51161046453c40b9eaf63bfb19050, type: 3}
+  m_Name: Quiz_L1060_01
+  m_EditorClassIdentifier: 
+  question: What does the `Update()` function do in Unity?
+  optionList:
+  - It runs once at the start of the game
+  - It runs only when the player presses a key
+  - It runs every frame during gameplay
+  - It runs when an object is destroyed
+  correctOptionIndex: 2
+  answer: The `Update()` function is called once every frame.

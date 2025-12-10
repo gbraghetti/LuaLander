@@ -1,0 +1,18 @@
+.questionButton {
+    -unity-font-style: normal;
+    font-size: 12px;
+    -unity-text-align: middle-center;
+    white-space: normal;
+    text-overflow: ellipsis;
+    height: 100%;
+    opacity: 1;
+    border-top-width: 3px;
+    border-right-width: 3px;
+    border-bottom-width: 3px;
+    border-left-width: 3px;
+    border-left-color: rgb(255, 255, 255);
+    border-right-color: rgb(255, 255, 255);
+    border-top-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+    width: 95%;
+}

@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b77bfb2ebc4ee664ab63408f6b18e046, type: 3}
+  m_Name: FAQ_L1230_07
+  m_EditorClassIdentifier: 
+  title: "Do I need to use the \u201CMovement\u201D action for touch?"
+  text: "If you want a joystick-like input, yes. The \u201CMovement\u201D action
+    returns a `Vector2` which is required for analog-style control. If you're just
+    using buttons, you can stick with separate \u201CUp,\u201D \u201CLeft,\u201D
+    and \u201CRight\u201D actions."

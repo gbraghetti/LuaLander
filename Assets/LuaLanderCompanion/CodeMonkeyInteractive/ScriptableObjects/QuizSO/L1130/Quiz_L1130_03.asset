@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cf51161046453c40b9eaf63bfb19050, type: 3}
+  m_Name: Quiz_L1130_03
+  m_EditorClassIdentifier: 
+  question: What is a Prefab Variant?
+  optionList:
+  - "A prefab that can\u2019t be changed"
+  - A prefab that inherits from a base prefab but allows local overrides
+  - A UI-only prefab
+  - "A prefab that doesn\u2019t require a script"
+  correctOptionIndex: 1
+  answer: Prefab Variants allow you to reuse the base prefab but customize each instance
+    (like size and score multiplier) without affecting the original.

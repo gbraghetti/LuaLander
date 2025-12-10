@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f6a93b863ca8314695b382c0c8c2b3d, type: 3}
+  m_Name: L1240_MainMenuLoadingPause
+  m_EditorClassIdentifier: 
+  lectureCode: 1240
+  lectureSectionNumber: 24
+  lectureName: MainMenuLoadingPause
+  lectureTitle: Main Menu, Loading, Pause
+  frequentlyAskedQuestionListSO: {fileID: 11400000, guid: b01231490083d8d47ac6d2e73e95fa3e,
+    type: 2}
+  quizListSO: {fileID: 11400000, guid: b09fe5b6ccc0ac847b4a1d6f409fef6d, type: 2}
+  exerciseListSO: {fileID: 0}
+  lectureDescription: '<h1>Lecture Summary: Main Menu, Loading, Pause, Gamepad button
+    clicks</h1>
+
+
+
+    In this lecture, we made our Lunar Lander game feel like a
+    real, complete game by adding a proper main menu, pause menu, and game over screen,
+    plus full gamepad support for all UI navigation and interaction.
+
+
+
+    We started
+    by building a simple `MainMenuScene` with a play and quit button, and hooked
+    them up with a new `SceneLoader` static class. Instead of relying on string or
+    index-based scene loading (which can get messy), we made a clean enum system
+    for scene names, much safer and easier to manage.
+
+
+
+    Next, we implemented
+    a pause menu with `Time.timeScale = 0f` to stop the game and resume when the
+    menu button (Escape or gamepad Start) is pressed. Input was handled using the
+    new Input System, with proper action bindings and clean events.
+
+
+
+    We also
+    created a `GameOverScene` that shows the final score and lets the player return
+    to the main menu. To track progress between levels, we used static variables,
+    but since those persist between scenes, we added a `ResetStaticData()` method
+    to clean everything up when starting a new game.
+
+
+
+    Everything works with
+    both keyboard and gamepad, including navigating menus and pressing buttons. The
+    game is now fully playable start to finish, with all the polish you''d expect!
+
+'

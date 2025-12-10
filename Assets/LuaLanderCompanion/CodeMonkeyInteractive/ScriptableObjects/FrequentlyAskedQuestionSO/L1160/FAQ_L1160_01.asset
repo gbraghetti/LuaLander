@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b77bfb2ebc4ee664ab63408f6b18e046, type: 3}
+  m_Name: FAQ_L1160_01
+  m_EditorClassIdentifier: 
+  title: What is a Singleton and why use it here?
+  text: "A Singleton is a pattern that provides global access to a single instance
+    of a class. In this case, we use it for the Lander because there\u2019s only
+    ever one. It simplifies access to the Lander from other scripts like the GameManager
+    without manually dragging references around."

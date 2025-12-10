@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: 444927e92c1342045ba54ed69095a134
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - m_ViewDataDictionary: {instanceID: 0}
+  - visualTreeAsset: {fileID: 9197481963319205126, guid: 1105f6142ea01534d963745d8826b058,
+      type: 3}
+  - lectureSingleVisualTreeAsset: {fileID: 9197481963319205126, guid: 8d486bc4ef317a742a3906da7e131230,
+      type: 3}
+  - lectureHeaderVisualTreeAsset: {fileID: 9197481963319205126, guid: a1596925e1725c145baf6cb26f42e266,
+      type: 3}
+  - textTemplateVisualTreeAsset: {fileID: 9197481963319205126, guid: 29d802fab53cd3e469f712c5fd48c244,
+      type: 3}
+  - codeTemplateVisualTreeAsset: {fileID: 9197481963319205126, guid: afb3a873f88c4e2469567fcb4f77034c,
+      type: 3}
+  - videoTemplateVisualTreeAsset: {fileID: 9197481963319205126, guid: 0de35246f387b7c488f126a869dda7b9,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b77bfb2ebc4ee664ab63408f6b18e046, type: 3}
+  m_Name: FAQ_L1070_06
+  m_EditorClassIdentifier: 
+  title: "How do I know if I\u2019m applying force in local or world space?"
+  text: "If you use `Vector3.up`, it\u2019s world space. If you use `transform.up`,
+    it\u2019s local space relative to your object. Look at the move/rotate gizmos
+    in the Scene view and make sure they're set to Pivot and Local to help visualize
+    it."

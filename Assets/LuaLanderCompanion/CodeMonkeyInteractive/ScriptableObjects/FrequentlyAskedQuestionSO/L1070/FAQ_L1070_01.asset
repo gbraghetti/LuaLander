@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b77bfb2ebc4ee664ab63408f6b18e046, type: 3}
+  m_Name: FAQ_L1070_01
+  m_EditorClassIdentifier: 
+  title: Why use `transform.up` instead of `Vector3.up`?
+  text: '`Vector3.up` always points up in world space, no matter how your lander
+    is rotated. `transform.up` gives you the up direction relative to the object,
+    so your thrust always pushes the ship in the direction it''s facing.'

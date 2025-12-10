@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b77bfb2ebc4ee664ab63408f6b18e046, type: 3}
+  m_Name: FAQ_L1230_08
+  m_EditorClassIdentifier: 
+  title: Is touch input support included when I build to Android/iOS?
+  text: "Yes! As long as you\u2019ve used the Input System and assigned proper touch
+    bindings or `OnScreen` components, Unity will handle input from the mobile device
+    without any special extra steps."

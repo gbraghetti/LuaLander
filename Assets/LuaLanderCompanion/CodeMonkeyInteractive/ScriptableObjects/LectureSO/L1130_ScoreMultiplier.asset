@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f6a93b863ca8314695b382c0c8c2b3d, type: 3}
+  m_Name: L1130_ScoreMultiplier
+  m_EditorClassIdentifier: 
+  lectureCode: 1130
+  lectureSectionNumber: 13
+  lectureName: ScoreMultiplier
+  lectureTitle: Score Multiplier
+  frequentlyAskedQuestionListSO: {fileID: 11400000, guid: 6ad216b8d318b414cb35fd2ba4320296,
+    type: 2}
+  quizListSO: {fileID: 11400000, guid: 3a4fa015bb4cbd74eab53fffced50416, type: 2}
+  exerciseListSO: {fileID: 0}
+  lectureDescription: "<h1>Lecture Summary: Score Multiplier</h1>\r\n\r\nIn this
+    lecture, we made our scoring system even more fun by adding score multipliers
+    to different landing pads. We started by updating the `LandingPad` script to
+    include a private `scoreMultiplier` field, exposed in the Inspector using `[SerializeField]`
+    for editor editing while still keeping it safe from other scripts. Then we created
+    prefab variants of our landing pad, each with its own size and multiplier, like
+    a small one that gives 5x the score.\r\n\r\nTo read the multiplier, we added
+    a public getter method in the `LandingPad` script. This kept the variable private
+    but still allowed us to safely access it when calculating the final landing score.\r\n\r\nThen
+    we added a dynamic visual to display the multiplier directly on the landing pad.
+    We created a new `LandingPadVisual` script, gave it a reference to a TextMeshPro
+    component, and updated the text on `Awake()` by grabbing the multiplier from
+    the logic script. This was a great example of keeping logic and visuals separate,
+    clean code all the way!\r\n\r\nNow we\u2019ve got multiple pads, unique multipliers,
+    and clear visual indicators. Everything\u2019s working great. Next, we\u2019ll
+    add some nice thruster visuals to really bring the lander to life!\r\n"

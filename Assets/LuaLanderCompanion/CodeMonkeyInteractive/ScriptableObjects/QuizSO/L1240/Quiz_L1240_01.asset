@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cf51161046453c40b9eaf63bfb19050, type: 3}
+  m_Name: Quiz_L1240_01
+  m_EditorClassIdentifier: 
+  question: Why do we use an `enum` in the `SceneLoader` instead of raw strings or
+    integers?
+  optionList:
+  - To avoid using magic strings or build indices that are error-prone
+  - Because Unity does not support string-based scene loading
+  - So we can load multiple scenes at once
+  - To enable drag-and-drop scene selection in the editor
+  correctOptionIndex: 0
+  answer: Like I've mentioned several times you should avoid strings as much as possible
+    since they are so easy to make mistakes. In this case we cannot 100% avoid strings
+    but by using an Enum we can avoid it in our own code.

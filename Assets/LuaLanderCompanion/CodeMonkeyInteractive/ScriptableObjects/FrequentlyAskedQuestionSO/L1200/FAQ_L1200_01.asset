@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b77bfb2ebc4ee664ab63408f6b18e046, type: 3}
+  m_Name: FAQ_L1200_01
+  m_EditorClassIdentifier: 
+  title: Why use prefabs instead of separate scenes for each level?
+  text: "Prefabs allow for faster iteration and fewer scene loads. They\u2019re easier
+    to manage for smaller games like this, and keep all UI and core components in
+    a single scene. Although the multi-scene method also works fine, just personal
+    preference."

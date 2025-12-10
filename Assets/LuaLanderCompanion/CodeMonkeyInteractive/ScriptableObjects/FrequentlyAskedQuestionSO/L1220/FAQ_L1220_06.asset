@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b77bfb2ebc4ee664ab63408f6b18e046, type: 3}
+  m_Name: FAQ_L1220_06
+  m_EditorClassIdentifier: 
+  title: What does generating the C# class for the Input Actions actually do?
+  text: It creates a strong-typed class based on your action maps and actions that
+    does NOT rely on strings. So instead of dealing with fragile strings like "Player/Jump",
+    you can access it like `inputActions.Player.Jump`. Much cleaner and way less
+    error-prone.

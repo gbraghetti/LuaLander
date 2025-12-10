@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f6a93b863ca8314695b382c0c8c2b3d, type: 3}
+  m_Name: L1010_CreateProject
+  m_EditorClassIdentifier: 
+  lectureCode: 1010
+  lectureSectionNumber: 1
+  lectureName: CreateProject
+  lectureTitle: Create Project
+  frequentlyAskedQuestionListSO: {fileID: 11400000, guid: 9494a417f7dbd7f49bc5fb2909f30aaf,
+    type: 2}
+  quizListSO: {fileID: 11400000, guid: 7ba3231113611134088b48dc80abd5ed, type: 2}
+  exerciseListSO: {fileID: 0}
+  lectureDescription: "<h1>Lecture Summary: Create Project, Unity 6, URP 2D, Layout</h1>\r\n\r\nIn
+    this lecture, we kicked off the Lunar Lander project by setting up Unity and
+    preparing a clean working environment. I used Unity 6.1 with the Universal Render
+    Pipeline (URP) and 2D Renderer, perfect for this kind of game. I recommended
+    just watching these setup lectures first and then downloading the official project
+    files to ensure everything matches perfectly with what you\u2019ll see throughout
+    the course.\r\n\r\nWe went over setting up a clean editor layout, including positioning
+    the Inspector, Hierarchy, Project window, and Console for maximum efficiency.
+    I also tweaked some preferences like enabling VSync, setting the aspect ratio
+    to 16:9, and adjusting Console settings for better debugging. Finally, I mentioned
+    I\u2019ll be using Visual Studio 2022 for coding, but you're free to use any
+    IDE you prefer.\r\n\r\nSo now the project is ready, and we\u2019re good to go!
+    Let\u2019s move on and look into the Unity basics.\r\n\r\n"

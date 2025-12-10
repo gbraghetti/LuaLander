@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cf51161046453c40b9eaf63bfb19050, type: 3}
+  m_Name: Quiz_L1220_01
+  m_EditorClassIdentifier: 
+  question: Why is refactoring to use the Input Actions asset a good idea?
+  optionList:
+  - It improves performance by reducing CPU usage
+  - It allows using strings directly in your code
+  - It improves GPU performance
+  - It adds abstraction and simplifies adding new input schemes
+  correctOptionIndex: 3
+  answer: Refactoring with the Input System adds a clean abstraction layer that makes
+    your code adaptable and supports multiple input types like keyboard and gamepad
+    without code changes.

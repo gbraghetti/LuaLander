@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f6a93b863ca8314695b382c0c8c2b3d, type: 3}
+  m_Name: L1260_BonusCargoTransport
+  m_EditorClassIdentifier: 
+  lectureCode: 1260
+  lectureSectionNumber: 26
+  lectureName: BonusCargoTransport
+  lectureTitle: 'BONUS: Cargo Transport'
+  frequentlyAskedQuestionListSO: {fileID: 11400000, guid: 52fa568ee9c512b4e91b9404b8c656bf,
+    type: 2}
+  quizListSO: {fileID: 11400000, guid: ea08fda26ca2cf94697592720434bce8, type: 2}
+  exerciseListSO: {fileID: 0}
+  lectureDescription: "<h1>Lecture Summary: Cargo Transport</h1>\r\n\r\nIn this lecture,
+    we added a fun new gameplay mechanic\u2014cargo transport! We started by importing
+    a crate sprite and built a rope system using a chain of `Rigidbody2D` objects
+    connected with `HingeJoint2D`. The lander picks up the cargo from a designated
+    area by hovering over it for a few seconds, tracked using a timer and `OnTriggerStay2D`.
+    Once picked up, the crate dangles using physics, and we handle all the logic
+    cleanly through events and modular scripts.\r\n\r\nWe made sure the crate is
+    sensitive to collisions\u2014if it hits anything, it triggers a crash just like
+    a failed landing. To drop it off, the player flies to another zone and hovers
+    for a few seconds. We reused the same `CargoArea` script with a new enum to differentiate
+    pickup and drop-off zones. For UI feedback, we used a world-space `Canvas` with
+    a radial fill to visually show the progress timer. Finally, we hooked up a level-specific
+    script that gives a bonus score when the cargo is successfully delivered.\r\n\r\nThe
+    whole system is clean, modular, and fully physics-based\u2014feels super satisfying!
+    Next up, we\u2019ll build on this mechanic to create a key-and-door system.\r\n"

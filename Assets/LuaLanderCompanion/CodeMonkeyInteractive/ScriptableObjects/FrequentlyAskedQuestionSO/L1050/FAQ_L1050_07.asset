@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b77bfb2ebc4ee664ab63408f6b18e046, type: 3}
+  m_Name: FAQ_L1050_07
+  m_EditorClassIdentifier: 
+  title: "I used a BoxCollider instead of BoxCollider2D, and collisions don\u2019t
+    work. Why?"
+  text: "Unity\u2019s 2D and 3D physics systems don\u2019t interact. Make sure everything
+    in your scene (Rigidbody2D, BoxCollider2D, etc.) is using the 2D versions for
+    a 2D game."

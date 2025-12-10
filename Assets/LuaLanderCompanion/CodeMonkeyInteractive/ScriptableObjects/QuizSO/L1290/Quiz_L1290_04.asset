@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cf51161046453c40b9eaf63bfb19050, type: 3}
+  m_Name: Quiz_L1290_04
+  m_EditorClassIdentifier: 
+  question: What is a potential downside of using one animation timeline for all
+    asteroids in a level?
+  optionList:
+  - "You can\u2019t use any colliders"
+  - "The lander won\u2019t detect collisions anymore"
+  - All asteroids must share similar timing or some will appear frozen
+  - The game will crash
+  correctOptionIndex: 2
+  answer: When using a shared animation timeline, if some asteroids have much slower
+    keyframes than others, they might appear to stop while the animation continues.
+    Keeping animation timing consistent ensures smooth movement across all asteroids.

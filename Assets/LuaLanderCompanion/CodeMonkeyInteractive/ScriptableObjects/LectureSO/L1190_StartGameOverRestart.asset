@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f6a93b863ca8314695b382c0c8c2b3d, type: 3}
+  m_Name: L1190_StartGameOverRestart
+  m_EditorClassIdentifier: 
+  lectureCode: 1190
+  lectureSectionNumber: 19
+  lectureName: StartGameOverRestart
+  lectureTitle: Start, GameOver, Restart
+  frequentlyAskedQuestionListSO: {fileID: 11400000, guid: 256b29a0d4841624990a844fcdca223b,
+    type: 2}
+  quizListSO: {fileID: 11400000, guid: 94d128301148b07448ff4273c175ba0a, type: 2}
+  exerciseListSO: {fileID: 0}
+  lectureDescription: "<h1>Lecture Summary: Start, Game Over, Restart</h1>\r\n\r\nIn
+    this lecture, we made our game feel like an actual game by adding proper game
+    states: start, game over, and restart. First, we fixed the start so the lander
+    doesn\u2019t fall immediately, we just disabled gravity until the player presses
+    any key. Then we created a simple state machine using an enum to track whether
+    the game is in `WaitingToStart`, `Normal`, or `GameOver`.\r\n\r\nWe also improved
+    the timer so it only starts when the lander starts moving. On landing or crashing,
+    we trigger a new `GameOver` state, which disables movement and ends the game.
+    For crashes, we added a cool explosion VFX using a prefab, and hid the lander
+    sprite.\r\n\r\nFinally, we updated the `LandedUI` with a restart button. Clicking
+    it reloads the scene using `SceneManager.LoadScene(0)`, and we change the button
+    text based on whether the landing was a success or a crash (\"Continue\" vs \"Retry\").
+    Everything works smoothly now, we start when we press a key, we stop on game
+    over, and we can restart easily. Super clean, simple state flow. Up next, let\u2019s
+    build more levels!\r\n"

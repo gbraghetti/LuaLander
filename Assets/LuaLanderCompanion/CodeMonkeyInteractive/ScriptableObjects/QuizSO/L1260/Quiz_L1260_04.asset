@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cf51161046453c40b9eaf63bfb19050, type: 3}
+  m_Name: Quiz_L1260_04
+  m_EditorClassIdentifier: 
+  question: What happens if the crate collides with anything other than the lander?
+  optionList:
+  - It bounces off
+  - It plays a sound and gives points
+  - The game resets
+  - The game triggers a crash (game over)
+  correctOptionIndex: 3
+  answer: In the crate script, the game listens for collisions. If the crate collides
+    with something other than the lander, it triggers a game-over state using CargoCrashed(),
+    as the cargo is considered destroyed.

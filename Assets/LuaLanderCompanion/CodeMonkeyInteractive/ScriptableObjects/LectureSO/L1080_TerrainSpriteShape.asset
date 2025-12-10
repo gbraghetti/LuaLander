@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f6a93b863ca8314695b382c0c8c2b3d, type: 3}
+  m_Name: L1080_TerrainSpriteShape
+  m_EditorClassIdentifier: 
+  lectureCode: 1080
+  lectureSectionNumber: 8
+  lectureName: TerrainSpriteShape
+  lectureTitle: Terrain, SpriteShape
+  frequentlyAskedQuestionListSO: {fileID: 11400000, guid: a9fe575b3b3731944820fd529f159abe,
+    type: 2}
+  quizListSO: {fileID: 11400000, guid: a61b5cd4878415a4eb3fef512a74b307, type: 2}
+  exerciseListSO: {fileID: 0}
+  lectureDescription: "<h1>Lecture Summary: Terrain, Spriteshape</h1>\r\n\r\nIn this
+    lecture, we built a proper 2D terrain using Unity's awesome SpriteShape tool.
+    First, we zoomed out the camera by adjusting the orthographic size to give us
+    more room to work with. Then we created a closed SpriteShape and used the spline
+    editing tools to create a jagged, moon-like terrain, perfect for our Lunar Lander.\r\n\r\nWe
+    created a new SpriteShape Profile and assigned a rocky texture as the fill, removing
+    the border to keep things simple. We adjusted the scale using pixels per unit
+    to get the texture looking just right.\r\n\r\nAfter shaping the terrain visually,
+    we made it interactable by adding a **PolygonCollider2D**, which perfectly matched
+    the shape and updated automatically as we tweaked the spline. Now our lander
+    can land properly on complex terrain instead of falling through!\r\n\r\nWith
+    this, we\u2019ve got a super flexible and great-looking terrain system ready
+    for all kinds of level designs. Next up, we\u2019ll make the camera follow the
+    lander so we can explore those big terrains properly.\r\n\r\n"

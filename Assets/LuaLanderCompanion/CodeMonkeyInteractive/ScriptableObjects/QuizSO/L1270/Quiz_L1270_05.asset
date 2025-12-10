@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cf51161046453c40b9eaf63bfb19050, type: 3}
+  m_Name: Quiz_L1270_05
+  m_EditorClassIdentifier: 
+  question: How is the door opened after delivering the correct key cargo?
+  optionList:
+  - The lander collides with the door
+  - The door opens when a timer reaches zero
+  - The `Door` script listens to the `CargoArea.OnDroppedOff` event
+  - The key is destroyed automatically, and the door script finds the nearest door
+  correctOptionIndex: 2
+  answer: Each `Door` script is linked to a `CargoArea` and listens to its `OnDroppedOff`
+    event. When the correct key is delivered, the event triggers the door to open
+    via animation.

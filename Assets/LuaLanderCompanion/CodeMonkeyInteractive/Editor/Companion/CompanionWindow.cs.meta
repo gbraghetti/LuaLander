@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: d79724ace5c3f07469749298f1471438
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - m_ViewDataDictionary: {instanceID: 0}
+  - visualTreeAsset: {fileID: 9197481963319205126, guid: 660d685e3f793f74fa10b059fe271d76,
+      type: 3}
+  - textTemplateVisualTreeAsset: {fileID: 9197481963319205126, guid: 29d802fab53cd3e469f712c5fd48c244,
+      type: 3}
+  - codeTemplateVisualTreeAsset: {fileID: 9197481963319205126, guid: afb3a873f88c4e2469567fcb4f77034c,
+      type: 3}
+  - videoTemplateVisualTreeAsset: {fileID: 9197481963319205126, guid: 0de35246f387b7c488f126a869dda7b9,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

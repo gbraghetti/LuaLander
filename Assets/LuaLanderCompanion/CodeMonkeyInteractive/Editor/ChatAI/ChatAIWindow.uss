@@ -1,0 +1,15 @@
+.header {
+    font-size: 20px;
+    -unity-font-style: bold;
+    color: rgb(255, 244, 0);
+    -unity-text-align: upper-center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    white-space: normal;
+}
+
+.custom-label {
+    font-size: 20px;
+    -unity-font-style: bold;
+    color: rgb(68, 138, 255);
+}

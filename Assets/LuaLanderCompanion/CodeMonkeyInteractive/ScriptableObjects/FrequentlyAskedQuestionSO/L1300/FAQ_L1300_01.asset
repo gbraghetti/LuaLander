@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b77bfb2ebc4ee664ab63408f6b18e046, type: 3}
+  m_Name: FAQ_L1300_01
+  m_EditorClassIdentifier: 
+  title: Why does the turret use `headTransform.right` to aim?
+  text: Unity's `Transform.right` represents the local X-axis of the object. Rotating
+    the head by aligning its right direction with the vector pointing at the player
+    makes the sprite visually aim toward the target.

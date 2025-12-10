@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cf51161046453c40b9eaf63bfb19050, type: 3}
+  m_Name: Quiz_L1210_01
+  m_EditorClassIdentifier: 
+  question: What is the primary reason for adding a zoomed-out view at the start
+    of each level?
+  optionList:
+  - To increase the difficulty of the game
+  - To allow the player to see the entire level and plan their path
+  - To show off the Unity camera features
+  - To reduce lag at the beginning of the level
+  correctOptionIndex: 1
+  answer: The zoomed-out view helps players see the whole map so they can decide
+    where to land and plan their strategy, whether to go for an easy or risky landing
+    zone.

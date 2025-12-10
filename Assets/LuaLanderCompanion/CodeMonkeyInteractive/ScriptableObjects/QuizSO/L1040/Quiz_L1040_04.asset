@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cf51161046453c40b9eaf63bfb19050, type: 3}
+  m_Name: Quiz_L1040_04
+  m_EditorClassIdentifier: 
+  question: What happens if you open the project in a different Unity version than
+    recommended?
+  optionList:
+  - Everything looks and works exactly the same
+  - Unity will crash
+  - Some settings, menus, or behaviors might differ
+  - The game will automatically update to the new version
+  correctOptionIndex: 2
+  answer: Even if the differences are small, mismatched versions can lead to UI changes
+    or subtle bugs, which can be quite confusing for beginners. That's why I recommend
+    you use the exact same project as me so that you have the exact same setup.

@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f6a93b863ca8314695b382c0c8c2b3d, type: 3}
+  m_Name: L1290_BonusMovingObstacles
+  m_EditorClassIdentifier: 
+  lectureCode: 1290
+  lectureSectionNumber: 29
+  lectureName: BonusMovingObstacles
+  lectureTitle: 'BONUS: Moving Obstacles'
+  frequentlyAskedQuestionListSO: {fileID: 11400000, guid: 7c2380f7124b0504f81612cef19572ab,
+    type: 2}
+  quizListSO: {fileID: 11400000, guid: 4467160531533224e8ba3cbe484c943f, type: 2}
+  exerciseListSO: {fileID: 0}
+  lectureDescription: "<h1>Lecture Summary: Moving Obstacles</h1>\n\nIn this lecture,
+    we added some classic danger: moving obstacles! Specifically, we built a bunch
+    of deadly asteroids that move around and force the player to dodge them while
+    trying to land safely.\n\nWe started by importing some asteroid sprites and quickly
+    set up a basic static obstacle with a collider. Thanks to our clean project structure
+    and existing collision logic, touching it already results in a game over\u2014super
+    easy.\n\nThen we made things interesting by animating the asteroids. Instead
+    of scripting movement, we used Unity\u2019s Animator system to keep things simple
+    and visual. We grouped all the asteroids under a single AsteroidObjects_Level1
+    GameObject and made one big animation that moves them left and right. This way,
+    we didn\u2019t need separate animations for each asteroid.\n\nWe added multiple
+    asteroids with similar animation timings to keep everything looking smooth, and
+    just like that, we had a level full of moving death-traps. The result? A much
+    more exciting level that really tests the player\u2019s flying skills.\n\nClean
+    code, good structure, and smart use of Unity features made this one super quick
+    to implement. Alright, awesome!"

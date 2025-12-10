@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f6a93b863ca8314695b382c0c8c2b3d, type: 3}
+  m_Name: L1160_GameManagerSingleton
+  m_EditorClassIdentifier: 
+  lectureCode: 1160
+  lectureSectionNumber: 16
+  lectureName: GameManagerSingleton
+  lectureTitle: GameManager, Singleton
+  frequentlyAskedQuestionListSO: {fileID: 11400000, guid: 859efe45d5b50c548b9a54ccad8c9bd1,
+    type: 2}
+  quizListSO: {fileID: 11400000, guid: 45c9e92b1b189114dae8eca581968762, type: 2}
+  exerciseListSO: {fileID: 0}
+  lectureDescription: "<h1>Lecture Summary: GameManager, Singleton, Coins</h1>\r\n\r\nIn
+    this lecture, we added collectible coins to reward players with score and built
+    a proper system to track that score. Just like the fuel pickup, we made a `CoinPickup`
+    with a trigger collider and simple logic to destroy itself when collected. But
+    then came the real question, where do we store the score?\r\n\r\nInstead of adding
+    the score variable to the lander, we created a dedicated `GameManager` script
+    to handle general game data. To keep things clean and decoupled, we had the `Lander`
+    fire an `OnCoinPickup` event, and the `GameManager` listened to it to increase
+    the score.\r\n\r\nThen we learned the super useful **Singleton pattern**. We
+    turned the `Lander` into a singleton by creating a static `Instance` property,
+    so the `GameManager` could easily reference it without manual dragging or coupling.
+    This also let us add another event, `OnLanded`, to send the landing score. We
+    even passed custom data through the event using custom `EventArgs`.\r\n\r\nWith
+    all this, our game now tracks score cleanly through events and a central manager.
+    Next up, we\u2019ll stop using the console and build a proper UI to show score
+    and fuel.\r\n"

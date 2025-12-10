@@ -1,0 +1,2114 @@
+####### Lecture Create Project
+
+#### QUIZ
+Question: What Unity version is used in this course?
+0) Unity 5.6
+1) Unity 2021 LTS
+2) Unity 6.1
+3) Unity 7.0 Experimental
+
+Correct: 2
+
+Because that's the latest stable version at the time of recording this course. You should always use the latest either LTS or Supported version.
+
+
+Question: Why do I recommended you download the provided project files instead of following along step-by-step during setup?
+0) Because Unity setup is too hard to follow
+1) To guarantee matching versions and layouts
+2) To skip learning how Unity works
+3) To get bonus assets
+
+Correct: 1
+
+That way, you’ll avoid tiny version mismatches or UI changes and be able to follow along with 100% accuracy.
+
+
+Question: Which Render Pipeline is used for this 2D game?
+0) HDRP
+1) Built-In
+2) Custom SRP
+3) URP with 2D Renderer
+
+Correct: 3
+
+URP with the 2D Renderer is perfect for this kind of game since it's a 2D game. URP 2D supports 2D lights, SpriteShape, and various other 2D features.
+
+
+Question: What's the benefit of enabling "Clear on Play" in the Console settings?
+0) Clears your Hierarchy
+1) Maximizes game view
+2) Clears old log messages on play
+3) Makes Unity faster
+
+Correct: 2
+
+This avoids clutter and makes it easier to read fresh logs when hitting play.
+
+
+Question: Why should you avoid enabling "Collapse" in the Console?
+0) It uses more memory
+1) It's buggy
+2) You might miss repeated logs
+3) It hides errors
+
+Correct: 2
+
+Especially as a beginner, seeing repeated logs can help you understand how often something is running whereas if you Collapse then you might miss the number and think just one log is being printed.
+
+
+Question: Which IDE is used in this course for writing code?
+0) VS Code
+1) Rider
+2) Visual Studio 2022
+3) Notepad++
+
+Correct: 2
+
+That’s what I use, but you're free to use whichever IDE you're most comfortable with. The code will compile just the same.
+
+
+Question: What should you do if your Game view looks pixelated?
+0) Change aspect ratio to 4:3
+1) Restart Unity
+2) Zoom in the scale
+3) Push the scale slider to the left
+
+Correct: 3
+
+That ensures you’re seeing the full resolution and not a zoomed-in version of your game view.
+
+
+------------
+
+
+
+####### Lecture Unity Basics
+
+#### QUIZ
+Question: What defines the behavior of a GameObject in Unity?
+0) Its name
+1) Its position
+2) The scene it belongs to
+3) The components attached to it
+
+Correct: 3
+
+Components are what give GameObjects their functionality. A "Camera" is only a camera because it has a Camera component!
+
+
+Question: Which component is mandatory on all GameObjects in Unity?
+0) SpriteRenderer
+1) Transform
+2) Rigidbody2D
+3) AudioSource
+
+Correct: 1
+
+Every GameObject in Unity has to have a Transform component, it defines where and how the object exists in the world.
+
+
+Question: What is the purpose of the Hierarchy window in Unity?
+0) Displaying all scripts in the project
+1) Showing console messages
+2) Managing GameObjects in the current scene
+3) Previewing UI elements
+
+Correct: 2
+
+The Hierarchy shows all GameObjects that exist in the currently open scene or scenes (technically you can have multiple open)
+
+
+Question: What’s the main difference between Scene view and Game view?
+0) Scene view shows code, Game view shows logs
+1) Scene view shows camera view, Game view is a live editor
+2) Scene view is for editing, Game view shows what the player sees
+3) Scene view is optional, Game view is required
+
+Correct: 2
+
+The Scene view lets you move objects around, while the Game view shows exactly what your Camera sees during gameplay.
+
+
+Question: What happens when you press the “Play” button in Unity?
+0) Unity rebuilds the scene
+1) The selected script opens
+2) The game starts running
+3) Assets get imported
+
+Correct: 2
+
+Pressing Play enters Play Mode, meaning your scripts and game logic start executing in real time.
+
+
+Question: If you create a script that inherits from MonoBehaviour, what does that mean?
+0) The script won’t work in Unity
+1) It cannot be attached to GameObjects
+2) It can be used as a component
+3) It only runs in Play Mode
+
+Correct: 2
+
+Inheriting from MonoBehaviour means Unity will treat the script as a valid component you can attach to objects. Without MonoBehaviour you cannot attach the script to a Game Object.
+
+
+Question: What does the “F” key do in Scene view after selecting a GameObject?
+0) Fixes camera rotation
+1) Forces compilation
+2) Focuses on the selected object
+3) Flips the object horizontally
+
+Correct: 2
+
+Super handy for when you get lost in Scene view. Select an object and press `F` to center the view on it.
+
+
+Question: What does “local position” mean when talking about GameObjects?
+0) Position in the scene overall
+1) Position relative to the Inspector
+2) Position relative to its parent
+3) Position in the project folder
+
+Correct: 2
+
+Local position means the object’s position is offset from its parent. This becomes really important when working with hierarchies.
+
+
+------------
+
+
+
+####### Lecture Assets, Post Processing
+
+#### QUIZ
+Question: What is the correct way to import a `.unitypackage` into Unity?
+0) Just download it and it's automatic
+1) Drag it onto Visual Studio
+2) Drag it onto the Unity Editor window
+3) Open it with Visual Studio
+
+Correct: 2
+
+Just drag the `.unitypackage` into Unity, and you’ll get the import window to select what you want to bring in.
+
+
+Question: Why might a sprite not show up when dragged into the scene?
+0) It has no name
+1) It’s dropped in the Game view
+2) It needs a tag first
+3) You need to attach a script to it
+
+Correct: 1
+
+Dropping sprites into the *Game view* doesn't work, drop them into the *Scene view* or *Hierarchy* to position them properly.
+
+
+Question: What does increasing the 2D Global Light’s intensity do?
+0) Makes the scene darker
+1) Makes the UI brighter
+2) Increases overall lighting of 2D sprites
+3) Changes the Z-position of the camera
+
+Correct: 2
+
+The 2D Global Light affects all 2D renderers. Bumping the intensity makes everything appear brighter.
+
+
+Question: What’s the purpose of adding a Global Volume in Unity?
+0) To control global input
+1) To enable post processing effects
+2) To sync audio
+3) To store player preferences
+
+Correct: 1
+
+The Volume component lets you apply visual effects like bloom, vignette, etc., across the whole screen.
+
+
+Question: What must be enabled on the Camera to make post processing effects visible?
+0) HDR mode
+1) Audio Listener
+2) Post Processing checkbox
+3) Cinemachine
+
+Correct: 2
+
+Post-processing effects won’t be visible by this Camera unless this is turned on in the Camera component.
+
+
+Question: What does the Bloom effect do?
+0) Makes UI buttons clickable
+1) Adds glow to bright areas of the screen
+2) Animates background parallax
+3) Enables sound for sprites
+
+Correct: 1
+
+Bloom is used to simulate glowing effects, making bright areas look like they're shining.
+
+
+Question: What is the purpose of the Vignette effect?
+0) Adds pixelation to sprites
+1) Darkens the edges of the screen
+2) Zooms in the camera
+3) Rotates the main light
+
+Correct: 1
+
+Vignette creates a subtle dark border around the edges of the screen, giving a more cinematic feel. Personally I quite like this effect.
+
+
+Question: When positioning 2D objects in the Scene view, what Z value should you usually use?
+0) 1
+1) -10
+2) 0
+3) 100
+
+Correct: 2
+
+Since this is a 2D game, most of your sprites should be on Z = 0 and the camera should be on default Z = -10.
+
+
+Question: What’s the benefit of setting up post processing early in development for this course?
+0) It changes how C# code works
+1) It helps improve FPS
+2) It makes the course videos more visually appealing
+3) It automatically adds lighting scripts
+
+Correct: 2
+
+Like I mentioned, I’m adding it early here just to make the visuals nicer for the course, even though normally when building my games just by myself it’s usually something I do later.
+
+
+------------
+
+
+
+####### Lecture Setup Complete, Project Download
+
+#### QUIZ
+Question: Why do I recommend downloading the complete project files instead of setting everything up manually?
+0) It skips the need to install Unity
+1) To avoid package and version mismatches
+2) To practice importing assets
+3) Because Unity no longer supports manual setup
+
+Correct: 1
+
+This ensures everything matches what you see in the video exactly, without any minor differences due to versions.
+
+
+Question: What is the file format of the downloadable project files?
+0) .unity
+1) .exe
+2) .zip
+3) .rar
+
+Correct: 2
+
+The full project is provided as a `.zip` file. Just download and unpack it and then add that project to Unity Hub.
+
+
+Question: How should you open the downloaded project in Unity?
+0) Double-click on the Assets folder
+1) Create a new project and import the assets
+2) Use “Add Project from Disk” in Unity Hub
+3) Open it in Visual Studio
+
+Correct: 2
+
+That’s the correct way, Unity Hub will recognize and load the existing project folder properly.
+
+
+Question: What happens if you open the project in a different Unity version than recommended?
+0) Everything looks and works exactly the same
+1) Unity will crash
+2) Some settings, menus, or behaviors might differ
+3) The game will automatically update to the new version
+
+Correct: 2
+
+Even if the differences are small, mismatched versions can lead to UI changes or subtle bugs, which can be quite confusing for beginners. That's why I recommend you use the exact same project as me so that you have the exact same setup.
+
+
+Question: What is the recommended Unity version for this project?
+0) Unity 5.6
+1) Unity 2020 LTS
+2) Unity 6.1
+3) Unity 7 Beta
+
+Correct: 2
+
+The course uses **Unity 6.1**, which is the latest stable Supported version at the time of recording.
+
+
+------------
+
+
+
+####### Lecture Companion Walkthrough
+
+#### QUIZ
+Question: What is the main reason for separating logic and visuals in Unity game objects?
+0) To make the game run faster
+1) To reduce asset loading time
+2) To simplify animations
+3) To make it easier to manage and swap visuals without affecting logic
+
+Correct: 3
+
+Keeping logic and visuals separate lets you change sprites or add VFX without messing with physics or gameplay logic.
+
+
+Question: In the lecture, which Unity component is used to simulate gravity and movement on the Lander?
+0) Rigidbody
+1) Rigidbody 2D
+2) Transform
+3) PhysicsMaterial
+
+Correct: 1
+
+Since this is a 2D game, we use **Rigidbody 2D**, not the 3D version. This component enables physics simulation like gravity and forces.
+
+
+Question: What is the consequence of mixing 2D and 3D physics components in Unity?
+0) The game won’t compile
+1) The camera stops rendering
+2) The components work fine together
+3) The objects will not interact properly and collisions will fail
+
+Correct: 3
+
+Unity's 2D and 3D physics systems are completely separate, they don’t communicate. If you mix them, things like collisions just won’t happen.
+
+
+Question: Why should the collider be slightly smaller than the visual sprite for the Lander?
+0) To improve performance
+1) To save memory
+2) To give the player a more forgiving hitbox
+3) To align with Unity’s rendering pipeline
+
+Correct: 2
+
+A slightly smaller collider makes it easier for players to land safely and makes the game feel more forgiving and better to play.
+
+
+Question: Which component is used to give an object a physical shape for collision detection in Unity?
+0) Sprite Renderer
+1) Rigidbody
+2) Collider (BoxCollider2D)
+3) AudioSource
+
+Correct: 2
+
+Rigidbody gives movement and physics, but the **BoxCollider2D** defines the shape that interacts with other colliders. Again, don't mistakenly use a 3D collider.
+
+
+Question: What happens if you don't add a collider to the floor object?
+0) The lander will bounce
+1) The lander will freeze
+2) The lander will fall through it
+3) Unity will throw an error
+
+Correct: 2
+
+Without a collider, Unity doesn’t treat it as a physical object, so the lander just keeps falling.
+
+
+------------
+
+
+
+####### Lecture Create Lander
+
+#### QUIZ
+Question: What is the main reason for separating logic and visuals in Unity game objects?
+0) To make the game run faster
+1) To reduce asset loading time
+2) To simplify animations
+3) To make it easier to manage and swap visuals without affecting logic
+
+Correct: 3
+
+Keeping logic and visuals separate lets you change sprites or add VFX without messing with physics or gameplay logic.
+
+
+Question: In the lecture, which Unity component is used to simulate gravity and movement on the Lander?
+0) Rigidbody
+1) Rigidbody 2D
+2) Transform
+3) PhysicsMaterial
+
+Correct: 1
+
+Since this is a 2D game, we use **Rigidbody 2D**, not the 3D version. This component enables physics simulation like gravity and forces.
+
+
+Question: What is the consequence of mixing 2D and 3D physics components in Unity?
+0) The game won’t compile
+1) The camera stops rendering
+2) The components work fine together
+3) The objects will not interact properly and collisions will fail
+
+Correct: 3
+
+Unity's 2D and 3D physics systems are completely separate, they don’t communicate. If you mix them, things like collisions just won’t happen.
+
+
+Question: Why should the collider be slightly smaller than the visual sprite for the Lander?
+0) To improve performance
+1) To save memory
+2) To give the player a more forgiving hitbox
+3) To align with Unity’s rendering pipeline
+
+Correct: 2
+
+A slightly smaller collider makes it easier for players to land safely and makes the game feel more forgiving and better to play.
+
+
+Question: Which component is used to give an object a physical shape for collision detection in Unity?
+0) Sprite Renderer
+1) Rigidbody
+2) Collider (BoxCollider2D)
+3) AudioSource
+
+Correct: 2
+
+Rigidbody gives movement and physics, but the **BoxCollider2D** defines the shape that interacts with other colliders. Again, don't mistakenly use a 3D collider.
+
+
+Question: What happens if you don't add a collider to the floor object?
+0) The lander will bounce
+1) The lander will freeze
+2) The lander will fall through it
+3) Unity will throw an error
+
+Correct: 2
+
+Without a collider, Unity doesn’t treat it as a physical object, so the lander just keeps falling.
+
+
+------------
+
+
+
+####### Lecture C# Basics, Player Input
+
+#### QUIZ
+Question: What does the `Update()` function do in Unity?
+0) It runs once at the start of the game
+1) It runs only when the player presses a key
+2) It runs every frame during gameplay
+3) It runs when an object is destroyed
+
+Correct: 2
+
+The `Update()` function is called once every frame.
+
+
+Question: Why do we define the `Update()` and `Start()` methods as `private` explicitly?
+0) To make them visible in the Unity Editor
+1) To avoid compiler warnings
+2) To improve performance
+3) To be explicit and write clean, high-quality code
+
+Correct: 3
+
+By writing `private` explicitly, you're being clear and intentional about your code's access level. It’s a small detail but very useful as your projects grow.
+
+
+Question: What is the difference between the Input Manager and the Input System?
+0) Input System is older, Input Manager is newer
+1) Input System is more capable while the Input Manager is older
+2) Input Manager uses UI elements only
+3) Input Manager is required for mobile input
+
+Correct: 1
+
+The Input System is Unity’s newer and more flexible way of handling input. It supports things like multiple devices, multiple device types and easily remappable controls.
+
+
+Question: Why don’t we see log messages from `Debug.Log()` after writing them in the script?
+0) There’s a bug in Unity
+1) The script needs to be compiled
+2) The script isn’t attached to a GameObject
+3) Logs are only visible in play mode
+
+Correct: 2
+
+Scripts don’t run unless they’re attached to an active GameObject in the scene. Just writing a script isn’t enough, you have to assign it.
+
+
+Question: What does `Keyboard.current.upArrowKey.isPressed` check for?
+0) If the up arrow was pressed once
+1) If the up arrow key is currently being held down
+2) If the player released the up arrow
+3) If the keyboard is connected
+
+Correct: 1
+
+.isPressed checks if the key is being held down. It’s perfect for continuous input, like thrusting your lander up.
+
+
+Question: Why do we attach the script to the parent object instead of the child?
+0) The child can't run scripts
+1) To keep the logic and visuals separated
+2) Because the child is not a GameObject
+3) It automatically boosts performance
+
+Correct: 1
+
+Keeping logic and visuals separate helps keep things clean and easy to manage. The parent holds the logic (script, physics), while the child handles visuals (sprite, VFX).
+
+
+Question: Which namespace do you need for the Input System?
+0) Unity.InputEngine
+1) UnityEditor.InputSystem
+2) UnityEngine.InputLegacy
+3) UnityEngine.InputSystem
+
+Correct: 3
+
+You need `UnityEngine.InputSystem` for the newer Input System to access things like `Keyboard.current`.
+
+
+Question: How many times is the `Start()` function called?
+0) Every frame
+1) Once, when the script is compiled
+2) Once, when the GameObject becomes active
+3) Twice, if the object has children
+
+Correct: 2
+
+`Start()` is called exactly once when the GameObject (with the script attached) first enters the scene and becomes active.
+
+
+Question: What happens if you forget to enable the Input System in project settings?
+0) It uses both input methods automatically
+1) Your input code will not compile or work correctly
+2) Nothing, Unity handles it
+3) Input only works on mobile
+
+Correct: 1
+
+If the Input System isn't enabled in the Project Settings, your input code (especially things like `Keyboard.current`) won’t work, and Unity will throw errors.
+
+
+------------
+
+
+
+####### Lecture Physics Control
+
+#### QUIZ
+Question: Why should we use `FixedUpdate()` instead of `Update()` for physics calculations?
+0) Because FixedUpdate runs more often
+1) Because FixedUpdate has better logging
+2) Because physics runs on a fixed interval
+3) Because Update only works in play mode
+
+Correct: 2
+
+Unity’s physics system updates on a fixed timestep (by default 0.02s), so `FixedUpdate()` is the correct place to modify physics-related stuff like forces and torque.
+
+
+Question: What's the correct way to apply a force in the direction the lander is facing?
+0) `Vector3.up`
+1) `transform.forward`
+2) `new Vector3(0, 1, 0)`
+3) `transform.up`
+
+Correct: 3
+
+`transform.up` gives you the "up" direction relative to the object's rotation. So as the lander rotates, it still thrusts in its up direction, exactly what we want.
+
+
+Question: What does `Time.deltaTime` help with?
+0) Reduces performance cost
+1) Makes code easier to write
+2) Makes movement frame-rate independent
+3) Enables input smoothing
+
+Correct: 2
+
+`deltaTime` makes sure that things happen at the same *speed* no matter what framerate you're running at. Super important for consistent gameplay across different machines.
+
+
+Question: What's wrong with using a magic number like `700f` directly in your code?
+0) It causes a compiler error
+1) It makes the game run slower
+2) It makes the code hard to read and understand
+3) It's not compatible with Unity physics
+
+Correct: 2
+
+Magic numbers have hidden meaning. If you just see `700f` in code, it’s not clear *what* it represents. By using a named variable like `force`, your code becomes much more readable.
+
+
+Question: What does `AddTorque()` do?
+0) Rotates the object visually
+1) Adds rotation using physics
+2) Adjusts angular velocity directly
+3) Stops the rotation
+
+Correct: 1
+
+`AddTorque()` is how you apply rotational force to a Rigidbody2D. It’s like giving the object a little spin using physics.
+
+
+Question: Why do we assign the Rigidbody in `Awake()` instead of `Update()`?
+0) Because Awake only runs once
+1) Because Rigidbody must be assigned in the inspector
+2) Update can't access components
+3) To avoid using Generics
+
+Correct: 0
+
+Calling `GetComponent` inside `Update()` means it's running every frame which is needlessly wasteful. Doing it once in `Awake()` is much cleaner and more efficient.
+
+
+Question: What does `private` do when used on a field like `Rigidbody2D landerRigidbody2D`?
+0) Makes it editable in the inspector
+1) Restricts access to just this class
+2) Prevents compilation
+3) Allows inheritance
+
+Correct: 1
+
+Marking something `private` means it can only be accessed by this specific script, no other classes. Keeps your code safe from accidental changes.
+
+
+Question: Why do we set angular damping to a higher value like 5?
+0) To make rotation faster
+1) To prevent the object from rotating forever
+2) To improve collision detection
+3) To boost frame rate
+
+Correct: 1
+
+If you don’t dampen the angular velocity, the object will keep spinning forever. Damping gradually slows it down when you’re not applying torque, this feels way better for control.
+
+
+------------
+
+
+
+####### Lecture Terrain, SpriteShape
+
+#### QUIZ
+Question: What is the main benefit of using SpriteShape for terrain in Unity?
+0) It automatically adds lighting effects
+1) It allows building terrain out of 3D models
+2) It lets you create complex, flexible 2D shapes easily
+3) It replaces Rigidbody components
+
+Correct: 2
+
+SpriteShape is designed for flexible 2D terrain creation using spline-based shapes, it's perfect for designing irregular moon-like landscapes.
+
+
+Question: Where do you adjust the 2D camera zoom using orthographic size?
+0) Rigidbody2D component
+1) Terrain settings
+2) Sprite Renderer
+3) Camera’s orthographic size in the Inspector
+
+Correct: 3
+
+The camera's orthographic size controls how much vertical space is visible. A size of 10 means the camera shows 20 units vertically. (from -10 in the Y to +10)
+
+
+Question: What kind of collider should you use for a SpriteShape terrain?
+0) BoxCollider2D
+1) EdgeCollider2D
+2) PolygonCollider2D
+3) CircleCollider2D
+
+Correct: 2
+
+PolygonCollider2D is the best fit for irregular shapes like the ones you make with SpriteShape.
+
+
+Question: What happens if you don’t assign a collider to your SpriteShape terrain?
+0) Unity crashes
+1) The player will bounce off it
+2) It will not be visible in-game
+3) The lander will fall through it
+
+Correct: 3
+
+Without a collider, Unity physics treats the object as having no shape, so your lander falls right through.
+
+
+Question: What setting helps control how big the texture appears on your terrain?
+0) Mass
+1) Pixels Per Unit
+2) Alpha Cutoff
+3) Z Position
+
+Correct: 1
+
+"Pixels Per Unit" adjusts the scale of your texture in world space—super handy for fitting textures nicely to the terrain.
+
+
+Question: Which SpriteShape Profile field determines the appearance of the inside area of the shape?
+0) Border
+1) Fill
+2) Outline
+3) Spline
+
+Correct: 1
+
+The “Fill” texture defines how the main body of the SpriteShape looks, use it to show dirt, rocks, or anything else.
+
+
+Question: If you modify the spline points of the SpriteShape, what happens to the PolygonCollider2D?
+0) It stays unchanged
+1) It throws an error
+2) It automatically updates to match the new shape
+3) You must manually redraw the collider
+
+Correct: 2
+
+That’s the beauty of the PolygonCollider2D, it automatically adjusts when the SpriteShape changes.
+
+
+------------
+
+
+
+####### Lecture Cinemachine
+
+#### QUIZ
+Question: What is Cinemachine used for in Unity?
+0) Adding sound effects to a scene
+1) Controlling lighting settings
+2) Advanced physics simulations
+3) Managing and controlling camera behavior
+
+Correct: 3
+
+Cinemachine is Unity’s camera system designed to easily handle complex camera behavior like following objects or transitions.
+
+
+Question: How do you install Cinemachine in Unity?
+0) From the Unity Asset Store
+1) By dragging it into the scene
+2) Via the Package Manager
+3) It’s installed automatically with every project
+
+Correct: 2
+
+You install Cinemachine through Unity's Package Manager, just like other official Unity tools.
+
+
+Question: What component is added to the Main Camera when Cinemachine is active?
+0) Rigidbody
+1) Cinemachine Brain
+2) Cinemachine Composer
+3) Camera Controller
+
+Correct: 1
+
+The `CinemachineBrain` component takes control of the main camera and lets Cinemachine virtual cameras drive it.
+
+
+Question: Once you’re using Cinemachine, where should you modify camera settings like zoom?
+0) On the Main Camera
+1) In the Project Settings
+2) On the Cinemachine Virtual Camera
+3) Inside the Input Manager
+
+Correct: 2
+
+After Cinemachine is active, camera control happens through the Virtual Camera, not the main camera directly.
+
+
+Question: What component is used to make a Cinemachine camera follow an object?
+0) Follow Target
+1) Rigidbody2D
+2) Position Composer
+3) Camera Tracker
+
+Correct: 2
+
+The Position Composer component allows a Cinemachine Virtual Camera to follow a specified object in the scene.
+
+
+Question: What field do you use to assign which object the camera should follow?
+0) DeadZone
+1) Tracking Target
+2) Update Mode
+3) Follow Damping
+
+Correct: 1
+
+The "Tracking Target" field defines which GameObject the virtual camera should follow.
+
+
+Question: What does setting a DeadZone do in Cinemachine?
+0) Stops the camera completely
+1) Adds extra delay before movement
+2) Keeps the camera from following if the object is within a certain screen area
+3) Zooms in when idle
+
+Correct: 2
+
+A DeadZone prevents the camera from moving unless the target moves beyond a certain distance from center.
+
+
+Question: Why might you want to use a DeadZone with your lander?
+0) To slow down the lander’s physics
+1) To stop input from working
+2) To reduce jitter and camera bouncing when the lander is near the center
+3) To reset the camera
+
+Correct: 2
+
+The DeadZone helps keep the camera steady, especially during delicate landings or slow movements.
+
+
+Question: What is the result of manually modifying the Main Camera’s settings after adding Cinemachine?
+0) It crashes Unity
+1) It creates a second camera
+2) Nothing happens, the settings are overridden
+3) The camera detaches from the scene
+
+Correct: 2
+
+Once Cinemachine is active, changes to the Main Camera are ignored because it's now controlled by the Virtual Camera.
+
+
+------------
+
+
+
+####### Lecture Background, Sorting Order
+
+#### QUIZ
+Question: What is the purpose of sorting order in Unity 2D?
+0) To organize assets in folders
+1) To determine which sprite appears in front or behind
+2) To align physics with UI elements
+3) To control animation speed
+
+Correct: 1
+
+Sorting order defines the visual stacking order of 2D sprites, who’s in front and who’s behind.
+
+
+Question: What should you set the Sprite Renderer’s “Draw Mode” to for a tiling background?
+0) Simple
+1) Sliced
+2) Tiled
+3) Stretched
+
+Correct: 2
+
+Tiled mode allows the sprite to repeat across a width and height without stretching the texture.
+
+
+Question: What can happen if your tiled background is set to an extremely large size (e.g., 500x500)?
+0) The game crashes
+1) The sprite disappears
+2) Visual errors or performance issues
+3) It changes to wireframe mode
+
+Correct: 2
+
+Large tile sizes can cause rendering artifacts or errors in Unity, it's due to the Mesh vertex limit.
+
+
+Question: Which setting controls the visual stacking order *within* the same sorting layer?
+0) Draw Mode
+1) Sorting Order
+2) Pixels Per Unit
+3) Transform Z Position
+
+Correct: 1
+
+The Sorting Order field determines which sprites render on top when they share the same sorting layer.
+
+
+Question: In the Sorting Layers list, how is rendering priority determined?
+0) Alphabetically
+1) Topmost layers are rendered first
+2) Layers at the bottom render first, top render last
+3) Randomly by Unity
+
+Correct: 2
+
+Unity renders sorting layers from top to bottom in the list, bottom-most layers are rendered last, and appear in front.
+
+
+Question: If the background appears on top of everything, what’s likely the issue?
+0) The background has no texture
+1) The scale is too small
+2) It’s on a sorting layer that renders after other layers
+3) Its transform Z is too low
+
+Correct: 2
+
+Sorting layers are rendered from top to bottom, if the background is lower in the list, it appears in front.
+
+
+Question: What sorting order value was used to ensure the lander renders above the terrain?
+0) 0
+1) -10
+2) +10
+3) 1000
+
+Correct: 2
+
+A sorting order of +10 places the lander visually in front of other sprites in the same layer on the default of 0.
+
+
+Question: Why is the background placed on its own sorting layer?
+0) To reduce build size
+1) To help physics detection
+2) To easily ensure it renders behind other elements
+3) To enable lighting
+
+Correct: 2
+
+Using a dedicated background layer guarantees it stays visually behind everything else in the scene.
+
+
+Question: What happens when you try to stretch a sprite in Normal draw mode?
+0) It tiles automatically
+1) It snaps to a grid
+2) The texture gets stretched and distorted
+3) It disappears
+
+Correct: 2
+
+Normal mode stretches the sprite’s texture, often leading to visual distortion when scaled large.
+
+
+Question: What is the effect of changing “Pixels Per Unit” on a Sprite Shape Profile or Sprite?
+0) Changes the color depth
+1) Controls sprite draw order
+2) Scales the texture up or down
+3) Affects the Rigidbody2D component
+
+Correct: 2
+
+Adjusting Pixels Per Unit alters how large the texture appears in the world, higher values make the sprite appear smaller.
+
+
+------------
+
+
+
+####### Lecture Landing Detection
+
+#### QUIZ
+Question: What Unity function detects when two 2D physics objects collide?
+0) OnCollisionEnter2D
+1) OnCollisionEnter
+2) OnTriggerEnter2D
+3) FixedUpdate
+
+Correct: 0
+
+The OnCollisionEnter2D function is triggered as soon as a collision happens between two objects. You also have OnCollisionExit2D when the collision stops, and OnCollisionStay2D that keeps firing on every single Update for as long as the two objects are touching.
+
+
+Question: Which Unity component property is used to determine the speed of impact during a collision?
+0) transform.velocity.magnitude
+1) collision.relativeVelocity.magnitude
+2) rigidbody.speed
+3) Time.deltaTime
+
+Correct: 1
+
+collision.relativeVelocity gives us the relative velocity involved in the collision, which in this case since the Terrain is static is just the Lander velocity. Then the magnitude converts that Vector2 into a simple float.
+
+
+Question: What does the dot product between Vector2.up and transform.up tell us?
+0) The distance between two objects
+1) If the lander is upside down
+2) How aligned the lander’s up direction is with the global up
+3) The friction of the collision
+
+Correct: 2
+
+If 1 then it means the Lander is pointing straight up.
+
+
+Question: Which of the following values would indicate a nearly vertical, proper landing using the dot product?
+0) 1
+1) 0.5
+2) 0
+3) -1
+
+Correct: 0
+
+If the dot product is 1 then it means the Lander is pointing straight up. -1 would be if it was pointing straight down.
+
+
+Question: Why should you avoid using numbers like 4f or .87f directly in if-statements?
+0) They slow down performance
+1) Magic numbers make the code harder to understand and maintain
+2) Unity doesn’t allow floating point comparisons
+3) It makes the game crash
+
+Correct: 1
+
+You should never use magic numbers because they are unexplained and take time to read and understand. Instead make local variables with good descriptive names that make it easily clear what the number is used for.
+
+
+------------
+
+
+
+####### Lecture Landing Pad
+
+#### QUIZ
+Question: What is the main reason you should avoid using `gameObject.name` to identify objects?
+0) It increases performance overhead
+1) String comparisons are brittle and error-prone
+2) It's deprecated in Unity
+3) It works only with 3D objects
+
+Correct: 1
+
+String comparisons are fragile — even a single space or typo breaks the logic. Object references are much more robust.
+
+
+Question: Why is using tags to identify GameObjects not recommended?
+0) Tags cannot be changed at runtime
+1) Tags rely on strings, which are prone to human error
+2) Tags can only be used in 3D scenes
+3) Tags slow down your game
+
+Correct: 1
+
+Just like names, tags are string-based. Any typo, casing difference, or missing assignment breaks functionality, making them unreliable identifiers.
+
+
+Question: What’s the best practice for identifying specific objects like a Landing Pad?
+0) Compare names using `gameObject.name`
+1) Check the tag using `CompareTag()`
+2) Use `TryGetComponent<T>()` to check for a specific script
+3) Use `FindObjectOfType()` during the collision
+
+Correct: 2
+
+`TryGetComponent<LandingPad>` lets you identify the object by type, not by name or tag, which is far safer and clearer.
+
+
+Question: What Unity draw mode allows you to stretch a sprite without distorting its corners?
+0) Simple
+1) Sliced
+2) Tiled
+3) Stretched
+
+Correct: 1
+
+"Sliced" mode uses 9-slicing so only the center stretches, while the corners remain intact.
+
+
+Question: What Unity tool do you use to define the 9-slice regions on a sprite?
+0) Sprite Scaler
+1) Animator Window
+2) Sprite Editor
+3) Pixel Adjuster
+
+Correct: 2
+
+The Sprite Editor lets you define the green handles (9-slice lines) that control how your sprite is sliced and stretched.
+
+
+Question: Why is separating logic and visuals in GameObject hierarchy useful?
+0) It improves rendering performance
+1) It allows independent scaling of visuals without affecting logic
+2) It's required by Unity for scripting
+3) It lets you animate the GameObject
+
+Correct: 1
+
+Keeping visuals as a child object lets you scale/modify visuals without breaking gameplay logic or physics.
+
+
+Question: When using `TryGetComponent<LandingPad>()`, what happens if the component is not found?
+0) The method returns false and continues safely
+1) The game crashes
+2) A NullReferenceException is thrown
+3) Unity throws a warning
+
+Correct: 0
+
+`TryGetComponent` safely returns false if the component is missing, no crash or error.
+
+
+------------
+
+
+
+####### Lecture Score Multiplier
+
+#### QUIZ
+Question: Why do we mark `scoreMultiplier` as `[SerializeField] private` instead of `public`?
+0) Public variables can't be edited in the Inspector
+1) To expose it in the Inspector while keeping encapsulation
+2) Unity doesn’t allow public variables anymore
+3) Private fields load faster at runtime
+
+Correct: 1
+
+Using `[SerializeField] private` allows editing in the Inspector while keeping the field safe from external modification in code. Clean and safe!
+
+
+Question: What is the purpose of using `GetScoreMultiplier()` instead of making the variable public?
+0) It’s faster at runtime
+1) It prevents external scripts from modifying the variable
+2) It makes the multiplier animate
+3) It avoids compilation errors
+
+Correct: 1
+
+The getter provides *read-only access*, preventing any script from accidentally modifying the value. That’s good encapsulation!
+
+
+Question: What is a Prefab Variant?
+0) A prefab that can’t be changed
+1) A prefab that inherits from a base prefab but allows local overrides
+2) A UI-only prefab
+3) A prefab that doesn’t require a script
+
+Correct: 1
+
+Prefab Variants allow you to reuse the base prefab but customize each instance (like size and score multiplier) without affecting the original.
+
+
+Question: Why use a separate script like `LandingPadVisual` to update the score multiplier text?
+0) Because the text system only works in a separate script
+1) To keep logic and visuals separated (clean code)
+2) To avoid Unity warnings
+3) To make the prefab uneditable
+
+Correct: 1
+
+This separation of concerns ensures the landing logic doesn't get bloated with visual updates.
+
+
+Question: What Unity component is used to show the score multiplier in 3D space?
+0) UI Text
+1) TextMeshPro
+2) Canvas Text
+3) LabelTextRenderer
+
+Correct: 1
+
+`TextMeshPro` is the modern, high-quality text system in Unity, and for in-world text, we use the `TextMeshPro` (not the `TextMeshProUGUI` variant).
+
+
+Question: Where should the multiplier text logic go when using proper clean code structure?
+0) Inside the `LandingPad` script
+1) Inside a separate script like `LandingPadVisual`
+2) Directly in the prefab object
+3) In the lander's collision handler
+
+Correct: 1
+
+Visuals belong in a visual-handling script. This makes our code easier to maintain, test, and reuse.
+
+
+Question: What happens if you try to access `scoreMultiplier` from another class while it’s private and has no getter?
+0) Unity makes it public at runtime
+1) The field gets copied instead
+2) You get a compile-time error
+3) It silently fails
+
+Correct: 2
+
+Accessing a private field from another class without a getter results in a compile-time error, protecting your code from mistakes.
+
+
+------------
+
+
+
+####### Lecture Thruster Visuals
+
+#### QUIZ
+Question: Why did we create a separate `LanderVisuals` script instead of putting the thruster logic into the main Lander script?
+0) To reduce file size
+1) To avoid Unity errors
+2) To separate logic from visuals and keep code clean
+3) Because Unity doesn't allow particle code in main scripts
+
+Correct: 2
+
+Separating logic from visuals is a clean code practice. The Lander logic handles physics and input, while visuals go in their own script to avoid messy code and coupling.
+
+
+Question: How are the thruster particle systems turned on and off?
+0) By enabling/disabling the GameObject
+1) By enabling/disabling the Renderer
+2) By controlling the emission module
+3) By setting the alpha of the sprite
+
+Correct: 2
+
+We use the `.emission.enabled` property on each `ParticleSystem` to start or stop it. This gives us precise control over when particles spawn.
+
+
+Question: What’s the purpose of the `OnBeforeForce` event?
+0) It prevents the ship from moving
+1) It disables all thrusters before enabling the correct ones
+2) It resets the game
+3) It calculates the final score
+
+Correct: 1
+
+The `OnBeforeForce` event is triggered before applying any input force, and it's used to make sure all thrusters are disabled before enabling the correct one for the input.
+
+
+Question: Why did we use C# Events instead of directly calling methods in the visual script?
+0) Events run faster
+1) Unity requires it
+2) To decouple the logic and visual systems
+3) To reduce lag
+
+Correct: 2
+
+Using events allows the visual code to subscribe to input events without the logic needing to know anything about the visuals — this keeps systems clean and modular.
+
+
+Question: What does the question mark (`?.`) in `OnUpForce?.Invoke(...)` mean?
+0) It's a typo
+1) It's the null coalescing operator
+2) It's a comment
+3) It's the null conditional operator
+
+Correct: 3
+
+The `?.` checks if the event has any listeners (is not null) before trying to invoke it, which prevents errors from trying to call a null event with no listeners.
+
+
+Question: Which Unity component did we use in the thruster effect?
+0) Animator
+1) SpriteRenderer
+2) ParticleSystem
+3) TrailRenderer
+
+Correct: 2
+
+We used the `ParticleSystem` component to create a nice particle system for the thrusters.
+
+
+Question: What’s the biggest benefit of decoupling the visual and logic code like we did?
+0) Less typing
+1) You can replace visuals without breaking the logic
+2) It improves frame rate
+3) The Unity Editor loads faster
+
+Correct: 1
+
+Decoupling means your logic is reusable and testable, and your visuals can be swapped or removed without affecting gameplay.
+
+
+------------
+
+
+
+####### Lecture Fuel, Pickups
+
+#### QUIZ
+Question: Why should you multiply fuel consumption by `Time.deltaTime`?
+0) To make the game faster
+1) To reduce lag during gameplay
+2) To make fuel consumption independent of framerate
+3) To avoid using Update method
+
+Correct: 2
+
+Without `Time.deltaTime`, fuel would drain differently depending on your framerate. Using it ensures consistent fuel consumption across devices.
+
+
+Question: What happens when `fuelAmount` reaches zero?
+0) The lander explodes
+1) The player wins
+2) Input is ignored, and the lander falls with no control
+3) The game resets
+
+Correct: 2
+
+Once fuel is zero, the movement code returns early. No more force is applied, and the lander just drops with gravity.
+
+
+Question: How is a pickup collider made non-solid?
+0) By disabling the collider
+1) By using a BoxCollider3D
+2) By checking the “Is Trigger” checkbox
+3) By changing its tag
+
+Correct: 2
+
+Making a collider a Trigger means it no longer physically blocks objects but can still detect overlaps, it's perfect for pickups.
+
+
+Question: Which Unity function detects when a trigger collider is touched?
+0) OnCollisionEnter2D
+1) OnTriggerEnter2D
+2) OnMouseEnter
+3) OnColliderTrigger
+
+Correct: 1
+
+`OnTriggerEnter2D` is Unity's built-in function for detecting overlaps with 2D trigger colliders.
+
+
+Question: What is the clean code method used to identify the fuel pickup in the script?
+0) Comparing the object’s name
+1) Using tags
+2) Checking layer number
+3) Using `TryGetComponent<FuelPickup>()`
+
+Correct: 3
+
+Instead of brittle strings or tags, we use `TryGetComponent<FuelPickup>()` to check for a custom script, clean and safe!
+
+
+Question: What is the role of the `FuelPickup` script?
+0) To animate the pickup
+1) To define fuel amount
+2) To identify the GameObject as a fuel pickup
+3) To manage score
+
+Correct: 2
+
+It’s just a marker script used to identify the object type with `TryGetComponent`.
+
+
+Question: Why should the `DestroySelf` method be placed on the `FuelPickup` script instead of the lander?
+0) Because Unity requires it
+1) To keep logic encapsulated within the pickup
+2) To use physics properly
+3) To save memory
+
+Correct: 1
+
+Putting `DestroySelf` in the pickup script means each object manages its own destruction, another good clean code practice.
+
+
+------------
+
+
+
+####### Lecture GameManager, Singleton
+
+#### QUIZ
+Question: What does the `GameManager` script do in this lecture?
+0) Handles spaceship controls
+1) Manages all pickups in the game
+2) Stores and manages the player’s score
+3) Controls the camera movement
+
+Correct: 2
+
+The `GameManager` is created to keep track of general gameplay data, like the score.
+
+
+Question: Why did we create a `CoinPickup` script even though it doesn’t contain logic?
+0) To add sound effects
+1) To store score values
+2) To identify the object type using `TryGetComponent`
+3) To animate the coin
+
+Correct: 2
+
+The script acts as a type identifier so the lander knows when it touches a coin, without relying on fragile tags or names.
+
+
+Question: What’s the purpose of using an event like `OnCoinPickup` in the Lander script?
+0) To play animations
+1) To directly destroy the coin
+2) To allow other scripts (like GameManager) to respond to pickups
+3) To save the game
+
+Correct: 2
+
+Events allow decoupling, the Lander fires the event, and the GameManager listens and responds.
+
+
+Question: Why is the Singleton pattern useful in this lecture?
+0) To make code run faster
+1) To allow multiple copies of the lander
+2) To give easy global access to the lander instance
+3) To reduce build size
+
+Correct: 2
+
+By using a Singleton, any script (like GameManager) can easily access the single Lander instance. Which in this game is perfect since there is only a single Lander in the entire game.
+
+
+Question: In the Singleton implementation, why is the `Instance` property’s setter marked `private`?
+0) To reduce performance issues
+1) To prevent accidental changes from outside the class
+2) To allow other scripts to modify it
+3) To hide it from the editor
+
+Correct: 1
+
+This ensures only the Lander itself can assign the `Instance`, maintaining controlled access.
+
+
+Question: What does the `OnLandedEventArgs` class allow us to do?
+0) Handle collisions
+1) Send extra data (like landing score) through events
+2) Control physics
+3) Destroy GameObjects
+
+Correct: 1
+
+Custom `EventArgs` allow us to pass values like the landing score through events cleanly.
+
+
+Question: What is a benefit of having `AddScore(int scoreAmount)` inside GameManager instead of the Lander?
+0) It improves graphics
+1) It simplifies UI code
+2) It centralizes game state logic
+3) It avoids using events
+
+Correct: 2
+
+This keeps score logic in one place and avoids mixing Lander gameplay and global state code.
+
+
+------------
+
+
+
+####### Lecture UI
+
+#### QUIZ
+Question: What is the purpose of the Canvas Scaler component in Unity’s UI system?
+0) It makes the UI scale based on the device's refresh rate.
+1) It prevents the UI from scaling at all.
+2) It controls how UI elements scale across different screen resolutions.
+3) It locks the UI to a fixed size.
+
+Correct: 2
+
+The Canvas Scaler ensures UI elements adjust based on screen resolution, which is essential for making your game look correct on different resolutions and screen sizes.
+
+
+Question: Which Canvas Render Mode renders UI elements over the camera view?
+0) World Space
+1) Screen Space - Camera
+2) Screen Space - Overlay
+3) UI Only Mode
+
+Correct: 2
+
+"Screen Space - Overlay" renders the UI on top of everything else, regardless of the camera setup.
+
+
+Question: What Unity component must exist in the scene to handle UI interaction events like button clicks?
+0) Event Manager
+1) Input Controller
+2) Input Module
+3) Event System
+
+Correct: 3
+
+Unity’s UI requires an `Event System` GameObject to detect and process interactions.
+
+
+Question: What UI component type is used for dynamic visual bars like the fuel bar?
+0) Image
+1) TextMeshPro
+2) RawImage
+3) Sprite Renderer
+
+Correct: 0
+
+Unity’s `Image` component can be set to "Filled" mode for progress bars like health, fuel, etc.
+
+
+Question: What does setting an image’s type to “Filled” allow you to do?
+0) Change its tint dynamically
+1) Rotate it in code
+2) Use it as a clickable button
+3) Visually fill or empty the image based on a value
+
+Correct: 3
+
+“Filled” images can visually represent a percentage-based fill level—perfect for things like fuel bars or health bars!
+
+
+------------
+
+
+
+####### Lecture Landed UI
+
+#### QUIZ
+Question: What is the purpose of the `LandedUI` script?
+0) To calculate landing score and apply physics.
+1) To display landing stats when the player lands or crashes.
+2) To store the player’s game state across scenes.
+3) To handle player input after a successful landing.
+
+Correct: 1
+
+`LandedUI` is purely a visual script that updates and displays the landing results to the player when the landing event fires.
+
+
+Question: Why is the `gameObject.SetActive(false)` call placed in `Start()` instead of `Awake()`?
+0) Because `Start()` runs before `Awake()`.
+1) Because UI updates only work in `Start()`.
+2) To avoid Unity bugs with game object visibility.
+3) To make sure the script can subscribe to events before being disabled.
+
+Correct: 3
+
+If you disable a GameObject in `Awake()`, its `Start()` method never runs—so event listeners wouldn’t be attached. That’s why you do it in `Start()`.
+
+
+Question: What’s the benefit of using a custom `EventArgs` class for the `OnLanded` event?
+0) It makes the event more secure.
+1) It allows sending multiple related values with the event.
+2) It speeds up event performance.
+3) It helps the garbage collector.
+
+Correct: 1
+
+Custom `EventArgs` classes are great when you need to send extra data with your event, like speed, angle, and score in this case.
+
+
+Question: What is the purpose of the `LandingType` enum?
+0) To store different multipliers
+1) To define UI states
+2) To categorize the type of landing outcome
+3) To control animation speeds
+
+Correct: 2
+
+The `LandingType` enum helps define whether the player had a successful landing, crashed due to angle, went too fast, or landed outside the correct area.
+
+
+------------
+
+
+
+####### Lecture Start, GameOver, Restart
+
+#### QUIZ
+Question: What value does the lander's gravity scale start at during the 'WaitingToStart' state?
+0) 1.0
+1) 0.7
+2) 0
+3) -9.8
+
+Correct: 2
+
+The gravity is disabled at the start (`gravityScale = 0`) to prevent the lander from falling before the player provides input.
+
+
+Question: What triggers the game to move from the 'WaitingToStart' state to 'Normal'?
+0) The GameManager enabling the timer
+1) The player clicking a UI button
+2) The scene finishing loading
+3) Player pressing any movement key (Up, Left, Right)
+
+Correct: 3
+
+Any key press related to movement (up, left, right arrow) triggers the game to enter the `Normal` state and activate gravity.
+
+
+Question: How does the timer know when to start counting time?
+0) It runs continuously in Update.
+1) It starts when `GameManager.Start()` is called.
+2) The Lander fires a `StateChanged` event, and the GameManager listens for it.
+3) It's triggered from the UI script.
+
+Correct: 2
+
+The Lander fires an event when the state changes to `Normal`, and the GameManager starts the timer only then.
+
+
+Question: What happens when the Lander crashes?
+0) Nothing changes; the player can still fly.
+1) The scene automatically restarts.
+2) A crash animation is played and the game enters a `GameOver` state.
+3) The score resets and fuel is restored.
+
+Correct: 2
+
+On crash, the game enters the `GameOver` state, disables the lander, and spawns an explosion effect.
+
+
+Question: How is the restart button functionality implemented?
+0) By calling a custom reset function on all scripts.
+1) By using `SceneManager.LoadScene(0)` inside a lambda function.
+2) By resetting all variables manually in Update.
+3) By re-enabling the GameObject hierarchy.
+
+Correct: 1
+
+The restart is triggered by a button click which reloads the scene using `SceneManager.LoadScene(0)`.
+
+
+Question: Why is using `SceneManager.LoadScene(0)` considered a temporary solution?
+0) Scene 0 might not always exist.
+1) Magic numbers should be avoided, and a proper loader will be added later.
+2) It reloads the entire Unity Editor.
+3) It breaks prefab connections.
+
+Correct: 1
+
+Using raw scene indexes (like `0`) is a magic number; the plan is to refactor this with a more robust loader system later.
+
+
+------------
+
+
+
+####### Lecture Levels
+
+#### QUIZ
+Question: What Unity feature is used to define and manage each individual level?
+0) Unity Timeline
+1) Separate Unity scenes
+2) Prefabs
+3) ScriptableObjects
+
+Correct: 2
+
+Each level is stored as a prefab and dynamically instantiated at runtime.
+
+
+Question: What key data is stored on the `GameLevel` script?
+0) Player input settings
+1) UI stats
+2) Level number and player start position
+3) Physics settings
+
+Correct: 2
+
+The `GameLevel` script contains the level number and a reference to the lander's starting position, here we can easily add more level-specific data that we need.
+
+
+Question: Why is the lander’s position set programmatically instead of manually?
+0) To support dynamic terrain deformation
+1) To allow the player to spawn randomly
+2) To place the player at the correct spawn point defined in each level
+3) Unity requires it for physics objects
+
+Correct: 2
+
+Each level prefab includes a `LanderStartPosition` Transform, which defines where the lander starts.
+
+
+Question: Why didn't `GoToNextLevel()` work properly the first time?
+0) The prefab was missing a collider
+1) The scene wasn’t added to the Build Settings
+2) `levelNumber` was a non-static field and got reset on scene reload
+3) Unity doesn’t support reloading scenes during runtime
+
+Correct: 2
+
+Since `levelNumber` was an instance field, it got reset when the GameManager was re-instantiated on scene reload.
+
+
+Question: What C# feature was used to persist `levelNumber` across scene reloads?
+0) Enums
+1) Events
+2) Singleton
+3) Static fields
+
+Correct: 3
+
+Making `levelNumber` static means it belongs to the class, not the instance—so it’s preserved between scene reloads.
+
+
+Question: Where is the list of available level prefabs stored?
+0) In a .json config file
+1) Inside the GameLevel script
+2) In a serialized list in the GameManager
+3) In Unity's Physics2D settings
+
+Correct: 2
+
+The `GameManager` has a `List<GameLevel>` that is populated via the Inspector.
+
+
+Question: How is the score preserved between levels?
+0) By saving it to PlayerPrefs
+1) By passing it through scene parameters
+2) By making the score field static
+3) It is reset on every level intentionally
+
+Correct: 2
+
+Making the score field static ensures it persists between scene reloads, just like `levelNumber`.
+
+
+------------
+
+
+
+####### Lecture Zoom
+
+#### QUIZ
+Question: What is the primary reason for adding a zoomed-out view at the start of each level?
+0) To increase the difficulty of the game
+1) To allow the player to see the entire level and plan their path
+2) To show off the Unity camera features
+3) To reduce lag at the beginning of the level
+
+Correct: 1
+
+The zoomed-out view helps players see the whole map so they can decide where to land and plan their strategy, whether to go for an easy or risky landing zone.
+
+
+Question: What component is used to follow the player in this project?
+0) Main Camera
+1) Rigidbody2D
+2) Cinemachine Virtual Camera
+3) Animator
+
+Correct: 2
+
+We're using a Cinemachine Virtual Camera with a tracking target to follow the player smoothly through the level.
+
+
+Question: What is the correct Unity component setting used to control the zoom level in a 2D orthographic camera?
+0) Field of View
+1) Zoom Factor
+2) Orthographic Size
+3) Projection Distance
+
+Correct: 2
+
+In 2D orthographic mode, the `Orthographic Size` determines the zoom level, higher values zoom out, lower values zoom in.
+
+
+Question: Why did we add a `CameraStartTarget` object to each level?
+0) To control audio
+1) To show a cinematic intro
+2) To define the camera’s tracking target for the zoom-out phase
+3) To set a background texture
+
+Correct: 2
+
+Each level has a unique `CameraStartTarget` transform that the Cinemachine camera uses to position itself and show the full map before gameplay begins.
+
+
+Question: Why do we switch the camera’s tracking target when the player starts moving?
+0) To reset the game
+1) To follow the lander as it plays
+2) To increase the zoom level
+3) To improve performance
+
+Correct: 1
+
+Once the player starts moving, we switch the camera target back to the Lander so it follows the gameplay normally.
+
+
+Question: How is the zoom effect made smooth instead of abrupt?
+0) Using `Time.fixedDeltaTime`
+1) Using an animation clip
+2) By manually adjusting the camera position
+3) By interpolating the `OrthographicSize` using `Mathf.Lerp`
+
+Correct: 3
+
+We use `Mathf.Lerp` to gradually interpolate the zoom level over time, resulting in a smooth zoom transition.
+
+
+Question: What kind of variable is `NORMAL_ORTHOGRAPHIC_SIZE` in the zoom script?
+0) Public instance variable
+1) Constant
+2) Local variable
+3) Static field
+
+Correct: 1
+
+It’s defined as a `const` since it never changes during gameplay and helps us avoid magic numbers.
+
+
+------------
+
+
+
+####### Lecture Input System Refactoring, Gamepad
+
+#### QUIZ
+Question: Why is refactoring to use the Input Actions asset a good idea?
+0) It improves performance by reducing CPU usage
+1) It allows using strings directly in your code
+2) It improves GPU performance
+3) It adds abstraction and simplifies adding new input schemes
+
+Correct: 3
+
+Refactoring with the Input System adds a clean abstraction layer that makes your code adaptable and supports multiple input types like keyboard and gamepad without code changes.
+
+
+Question: In the Input System, what is an Action Map used for?
+0) Defining collision layers
+1) Binding inputs
+2) Grouping related input actions like 'Jump' or 'Move'
+3) Setting up animation transitions
+
+Correct: 2
+
+An Action Map groups a set of related input actions (e.g. Player controls, UI actions), making input handling organized and modular.
+
+
+Question: What’s the correct way to check if a button is currently being held down using the Input System?
+0) Using `.WasPressedThisFrame()`
+1) Using `.IsPressed()`
+2) Using `.Performed +=`
+3) Using `Input.GetKey()`
+
+Correct: 1
+
+`.IsPressed()` is the right method to check if an action is currently being held. Perfect for constant movement checks like thrust in the Lunar Lander.
+
+
+Question: What happens if you don’t call `Enable()` on your Input Actions class?
+0) Input actions are logged but not used
+1) None of the input bindings will work
+2) Only gamepad bindings are disabled
+3) It automatically enables at runtime
+
+Correct: 1
+
+Input bindings won't work unless you explicitly call `Enable()` on the generated Input Actions instance.
+
+
+Question: How do you add support for gamepad in the Input System?
+0) Use `Input.GetJoystickNames()`
+1) Add an extra binding to the existing action
+2) Create a separate Action Map
+3) Use `Input.GetButton("Fire")`
+
+Correct: 1
+
+You simply add a new binding to an existing action in the Input Actions window. The system handles the rest automatically.
+
+
+Question: What’s the benefit of using a singleton `GameInput` class?
+0) It allows saving input preferences
+1) It gives easy global access to input logic
+2) It improves FPS
+3) It’s required by Unity
+
+Correct: 1
+
+A singleton makes your custom `GameInput` class globally accessible and reusable without cluttering code.
+
+
+------------
+
+
+
+####### Lecture Touch Input
+
+#### QUIZ
+Question: What Unity component allows you to simulate input from touch buttons?
+0) InputField
+1) TouchInputModule
+2) OnScreenButton
+3) ButtonComponent
+
+Correct: 2
+
+This component is part of Unity’s Input System and lets UI buttons emit input events just like real keyboard/gamepad inputs.
+
+
+Question: What kind of action type is used for a joystick input in the Input System?
+0) Button
+1) Trigger
+2) Value
+3) Axis
+
+Correct: 2
+
+Since a joystick gives us directional values (X and Y), we need a `Value` action type that returns a `Vector2`.
+
+
+Question: What Unity tool allows you to simulate touch input without a physical mobile device?
+0) Unity Remote
+1) Game View Resizer
+2) Device Simulator
+3) Build & Run Emulator
+
+Correct: 2
+
+Unity’s Device Simulator lets you test your mobile UI and touch interactions directly in the editor.
+
+
+Question: What do you need to do after adding a new action to your Input Actions asset?
+0) Reload the entire project
+1) Click "Save Asset" and wait for code to compile
+2) Save and restart Unity
+3) Manually write the binding in code
+
+Correct: 1
+
+After modifying actions and enabling C# generation, Unity automatically compiles the new bindings into a usable class after saving the input actions asset.
+
+
+Question: Why do we check if `GetMovementInputVector().y > 0.4f` in code?
+0) To ensure the player is holding both up and down
+1) Because joystick axes range from 0 to 1
+2) To simulate analog precision
+3) To ensure we only trigger thrust when the joystick is clearly tilted up
+
+Correct: 3
+
+Joysticks return a continuous float value, so checking for a threshold like 0.4f ensures intentional movement.
+
+
+Question: What’s a major benefit of using Unity's Input System with multiple bindings per action?
+0) Reduced file size
+1) Automatic code generation
+2) Support for multiple input methods with no code change
+3) It improves the game’s FPS
+
+Correct: 2
+
+Once actions are abstracted, we can bind multiple devices, keyboard, gamepad, touch, without touching our core gameplay logic.
+
+
+Question: What value type does the "Movement" action return?
+0) float
+1) Vector2
+2) bool
+3) Quaternion
+
+Correct: 1
+
+Since joystick and touch inputs return 2D directional data, we use `Vector2` to capture both X and Y axis movement.
+
+
+------------
+
+
+
+####### Lecture Main Menu, Loading, Pause
+
+#### QUIZ
+Question: Why do we use an `enum` in the `SceneLoader` instead of raw strings or integers?
+0) To avoid using magic strings or build indices that are error-prone
+1) Because Unity does not support string-based scene loading
+2) So we can load multiple scenes at once
+3) To enable drag-and-drop scene selection in the editor
+
+Correct: 0
+
+Like I've mentioned several times you should avoid strings as much as possible since they are so easy to make mistakes. In this case we cannot 100% avoid strings but by using an Enum we can avoid it in our own code.
+
+
+Question: What does `Time.timeScale = 0f` do in Unity?
+0) Pauses all gameplay and UI interactions
+1) Stops all time-based updates including physics and `Time.deltaTime`
+2) Only pauses the physics engine
+3) Speeds up the game
+
+Correct: 1
+
+Time.timeScale is multiplied onto Time.deltaTime to get the final result, so if it's 0 then all deltaTime will be 0 which will make everything not move.
+
+
+Question: How do we trigger pause/unpause using the Input System?
+0) By reading the Escape key state manually
+1) By checking for a double tap on the screen
+2) By assigning a `Menu` action and hooking into the `performed` event
+3) Through the default Unity pause system
+
+Correct: 2
+
+We did it the proper way by creating a new Action and assigning that action to both Keyboard and Gamepad bindings.
+
+
+Question: What’s the purpose of making `scoreTotal` and `levelNumber` static in `GameManager`?
+0) To make them editable from any GameObject
+1) To reset them automatically at game start
+2) To persist their values across scene loads
+3) To allow multiple scores to be tracked
+
+Correct: 2
+
+If they were not static then they would reset upon scene loading. Since we want them to persist we need to make them static.
+
+
+Question: Why do we call `GameManager.ResetStaticData()` when starting a new game from the Main Menu?
+0) To clear memory leaks
+1) To ensure the player always starts from level 1 with 0 score
+2) To initialize gamepad support
+3) To restart the Input System
+
+Correct: 1
+
+We have some static data which means it does not get reset automatically, so we need to manually reset it ourselves when starting a new game.
+
+
+------------
+
+
+
+####### Lecture Sounds and Music
+
+#### QUIZ
+Question: What is the recommended method to keep your gameplay logic decoupled from sound logic?
+0) Call `AudioSource.Play()` directly in the gameplay scripts
+1) Use Unity Events in gameplay scripts and listen to them in a SoundManager
+2) Use coroutines in all scripts that need sound
+3) Attach all sounds to the lander
+
+Correct: 1
+
+Events allow you to write decoupled code so the logic script is not tightly coupled to the SoundManager
+
+
+Question: Which Unity method is used to quickly play one-shot sound effects at a location?
+0) `AudioSource.PlayLooping()`
+1) `AudioClip.Play()`
+2) `AudioSource.PlayClipAtPoint()`
+3) `AudioSource.PlayOneShot()`
+
+Correct: 2
+
+This is a super easy to use static function to quickly play any sound effect.
+
+
+Question: Why is the thruster sound handled with an `AudioSource` instead of `PlayClipAtPoint()`?
+0) Because looping sounds can't be used with `PlayClipAtPoint()`
+1) Because `PlayClipAtPoint()` is too loud
+2) To avoid using the Input System
+3) Because it's the only way to play stereo sound
+
+Correct: 0
+
+The Thruster audio is meant to be continuous instead of one-shot so we handle it differently.
+
+
+Question: What is the main issue with music restarting on each level load, and how is it fixed?
+0) The music volume resets — fixed by increasing gain
+1) The pitch changes — fixed by restarting the audio source
+2) The time resets — fixed by saving `AudioSource.time` in a static variable and restoring it
+3) Music crashes — fixed by unloading scenes
+
+Correct: 2
+
+When the object is created, by default it will start playing from 0, so we need to keep the last time in order to correctly re-set it.
+
+
+------------
+
+
+
+####### Lecture Polish
+
+#### QUIZ
+------------
+
+
+

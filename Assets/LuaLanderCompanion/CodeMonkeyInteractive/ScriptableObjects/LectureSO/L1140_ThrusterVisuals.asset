@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f6a93b863ca8314695b382c0c8c2b3d, type: 3}
+  m_Name: L1140_ThrusterVisuals
+  m_EditorClassIdentifier: 
+  lectureCode: 1140
+  lectureSectionNumber: 14
+  lectureName: ThrusterVisuals
+  lectureTitle: Thruster Visuals
+  frequentlyAskedQuestionListSO: {fileID: 11400000, guid: f16aede304d79e34384ef772681741f8,
+    type: 2}
+  quizListSO: {fileID: 11400000, guid: 4233bfdb26362e74bb2268f74f5f756e, type: 2}
+  exerciseListSO: {fileID: 0}
+  lectureDescription: "<h1>Lecture Summary: Thruster Visuals</h1>\r\n\r\nIn this
+    lecture, we added some nice thruster visuals to our lander and, more importantly,
+    did it the clean way,fully separating logic from visuals. We started by placing
+    three particle systems on the lander: left, middle, and right thrusters. But
+    instead of letting them play constantly, we needed to control them via code,
+    only showing them when thrust is applied.\r\n\r\nTo keep our code clean, we created
+    a separate `LanderVisuals` script and controlled the particles by toggling their
+    emission module. Then, to avoid coupling the visual script directly to the input
+    logic, we used **C# events**, a super handy feature for decoupling. The `Lander`
+    script defined events like `OnUpForce`, `OnLeftForce`, and `OnRightForce`, which
+    the visual script listened to in order to enable or disable the correct thruster.\r\n\r\nWe
+    also added a `OnBeforeForce` event to make sure we disable all particle systems
+    before enabling the correct one each frame. This made the visuals feel nice and
+    responsive without cluttering the logic script.\r\n\r\nSo now we\u2019ve got
+    awesome-looking thruster visuals, fully decoupled from the core gameplay logic,
+    super clean and professional. Next up, we\u2019re adding a fuel mechanic to make
+    things more interesting!\r\n"
