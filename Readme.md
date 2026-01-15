@@ -15,3 +15,20 @@ git push -u origin main
 git remote add origin git@github.com:gbraghetti/LuaLander.git  
 git branch -M main  
 git push -u origin main
+
+## To remember
+
+![references](image.png)
+Coloquei um toogle em `keybindings.json` para ativar e desativar essas references
+
+```json
+{
+  "key": "ctrl+alt+l",
+  "command": "toggle",
+  "when": "editorTextFocus",
+  "args": {
+    "id": "toggleCodeLens",
+    "value": [{ "editor.codeLens": true }, { "editor.codeLens": false }]
+  }
+}
+```

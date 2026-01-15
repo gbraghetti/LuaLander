@@ -1,7 +1,6 @@
 using System;
 using TMPro;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class LandedUI : MonoBehaviour {
@@ -19,11 +18,12 @@ public class LandedUI : MonoBehaviour {
   }
 
   private void Start() {
-    Lander.Instance.OnLanded += Lander_OnLaned;
+    Lander.Instance.OnLanded += Lander_OnLanded;
+
     Hide();
   }
 
-  private void Lander_OnLaned(object sender, Lander.OnLandedEventArgs e) {
+  private void Lander_OnLanded(object sender, Lander.OnLandedEventArgs e) {
     if (e.landingType == Lander.LandingType.Success) {
       titleTextMesh.text = "SUCCESSFUL LANDING!";
       nextButtonTextMesh.text = "CONTINUE";
@@ -46,6 +46,7 @@ public class LandedUI : MonoBehaviour {
 
   private void Show() {
     gameObject.SetActive(true);
+    nextButton.Select();
   }
 
   private void Hide() {
